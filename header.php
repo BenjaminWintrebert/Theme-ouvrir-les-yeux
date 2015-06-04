@@ -27,7 +27,7 @@
 
             <div class="row">
                 <div class="header_ban col-md-12">
-                    <a href="<?php echo site_url(); ?>"><img src="<?php echo site_url();?>/wp-content/themes/oly/bootstrap/img/header.png" alt="Bannière Ouvrir Les Yeux" class="img-responsive"/></a>
+                    <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/header.png" alt="Bannière Ouvrir Les Yeux" class="img-responsive"/></a>
                 </div>
             </div>
             <div class="row">
@@ -35,8 +35,8 @@
                     <div id="pre-nav">
                         <div id="don-soutien" class="col-md-3">
 
-                            <a href=#><img src="/wp-content/themes/oly/bootstrap/img/logo_don.png" alt="Bouton des dons"/>DON</a>
-                            <a href=#><img src="/wp-content/themes/oly/bootstrap/img/logo_soutien.png"  alt="Bouton des soutiens"/>SOUTIEN</a>  
+                            <a href=#><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don.png" alt="Bouton des dons"/>DON</a>
+                            <a href=#><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien.png"  alt="Bouton des soutiens"/>SOUTIEN</a>  
                         </div>
                         <div id="mediatheque" class="col-md-3">
                             dfdf
@@ -51,7 +51,10 @@
                     </div>
                 </div>
             </div>
-            <nav id="nav" class="navbar navbar-default" role="navigation">
+           
+            <div class="row">
+                <div class="header_ban col-md-12">
+            <nav id="menu" class="navbar navbar-default" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header visible-xs">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -60,7 +63,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><?php bloginfo('name') ?></a>
+                    <a class="navbar-brand" href="#">Kawaii Walls</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,5 +76,5 @@
                         )); ?>
                 </div><!-- /.navbar-collapse -->
             </nav>
-
-
+                  </div>
+            </div>

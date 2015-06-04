@@ -5,6 +5,10 @@ body{
     background-color:black;
 }
 
+.main{
+    background-color:white;
+}
+
 .container{
     background:white;   
 }
@@ -19,6 +23,10 @@ body{
     padding: 0!important;
 }
 
+/******************************/
+/*          WIDGETS           */
+/******************************/
+
 #pre-nav{
     width:100%; 
     background:white;
@@ -31,15 +39,151 @@ body{
 
 }
 
-.main{
-    background-color:white;
-}
-
 #pre-nav img{
     width:10%;
     margin-right: 5px;
 }
 
+/******************************/
+/*           MENU             */
+/******************************/
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color:  transparent; 
+}
+
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;    
+}
+
+#menu ul{
+    border:none;   
+}
+
+#menu li{
+    position:relative;
+    display:block;  
+    background: #e02126!important;
+    width:12.5%;
+    border-left:1px solid white;
+    border-right:1px solid white; 
+}
+
+#menu li:hover,#menu li:active,#menu li:focus{
+     background: #2b425c !important;
+}
+
+#menu li li{
+    background: #2b425c !important;
+    margin-left:-2px;
+    border-left:2px solid white;
+    border-bottom:2px solid white;
+    border-top:0px;
+    border-right: 1px;
+}
+
+#menu li li:first-child{
+    border-top:2px solid white;
+}
+
+#menu li li:hover{
+    background: #4a763f !important;
+}
+
+#menu li li li{
+    background: #4a763f !important;
+    border-left:2px solid white;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom: 2px;
+}
+
+#menu li li li:hover{
+    background: #555555 !important;
+}
+#menu li li li li{
+    background: #555555 !important;
+    border-right:2px solid white;
+}
+
+#menu li li li li:first-child{
+    border-top:2px solid white;
+}
+
+#menu li li li li:hover{
+    background: black !important;
+}
+
+#menu a{
+    display:block;
+    color:white;
+    text-decoration:none; 
+    padding:0px; 
+    line-height:50px;
+}
+
+#menu a:hover{
+    background: none;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #2b425c;
+}
+
+@media screen and (min-width:768px){
+    #menu ul li:hover > ul{display:block;}
+/* Sous-menu 1 */
+#menu ul ul{
+    position:absolute; 
+    left:0; 
+    top:50px; 
+    z-index:99999;
+    display:none; 
+    float:left;
+    font:lighter 10pt Arial, Helvetica, sans-serif;
+}
+#menu ul ul li{
+    width:100%;
+}
+/* Sous-menu 2 */
+#menu ul ul ul{left:100%; top:0;}
+#menu ul ul a{
+    line-height:1em; 
+    padding:10px;
+    height:auto;
+}
+    .dropdown-menu{
+ padding:0;
+    margin:0;
+}
+}
+
+button{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+button{
+    display: block;
+ background:red;
+    color:white;
+    z-index:9999;
+}
+     #menu li{  
+    width:100%;
+}
+}
+
+#menu-primary{
+ width:100%;  
+    text-align: center;
+     font-size:13px;
+    font-weight: bold;
+}
+
+.collapse{
+ padding:0;   
+}
 
 /******************************/
 /*    Affiche des articles    */
