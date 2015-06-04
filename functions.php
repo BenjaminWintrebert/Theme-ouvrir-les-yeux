@@ -46,7 +46,7 @@ class BS3_Walker_Nav_Menu extends Walker_Nav_Menu {
         if ( is_object($args) && !empty($args->has_children) )
         {
             $link_after = $args->link_after;
-            $args->link_after = '';
+            $args->link_after = '</a><button class="bjr">bouton</button>';
         }
 
         parent::start_el($output, $item, $depth, $args, $id);
