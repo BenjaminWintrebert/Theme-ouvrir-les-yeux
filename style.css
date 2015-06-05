@@ -401,6 +401,7 @@ body{
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background-color: white;
+    overflow: hidden;
 }
 
 .article_container h1{
@@ -422,5 +423,11 @@ body{
     margin:0 auto;
     opacity: 0.4;
     margin-bottom: 10px;
+}
+
+.cellule{
+    width:15px;
+    height:15px;
+    margin-right: 5px;
 }
 /************FIN_ARTICLES*************/
