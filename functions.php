@@ -112,7 +112,7 @@ function shortened_title() {
     $original_title = get_the_title();
     $title = html_entity_decode($original_title, ENT_QUOTES, "UTF-8");
     // indiquer le nombre de caratère
-    $limit = "80";
+    $limit = "65";
     // fin du titre couper
     $ending="...";
     if(strlen($title) >= ($limit+3)) {
