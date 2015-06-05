@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal!important;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+}.flaticon-computerscreen11:before {
+	content: "\e000";
+}
+.flaticon-fast44:before {
+	content: "\e001";
+}
+.flaticon-headphone4:before {
+	content: "\e002";
+}
+.flaticon-logotype42:before {
+	content: "\e003";
+}
+.flaticon-magnifier12:before {
+	content: "\e004";
+}
+.flaticon-marker20:before {
+	content: "\e005";
+}
+.flaticon-news2:before {
+	content: "\e006";
+}
+.flaticon-picture64:before {
+	content: "\e007";
+}
+.flaticon-star40:before {
+	content: "\e008";
+}
+.flaticon-symbol20:before {
+	content: "\e009";
+}
+.flaticon-telephone5:before {
+	content: "\e00a";
+}
+.flaticon-twitter1:before {
+	content: "\e00b";
+}
+.flaticon-web42:before {
+	content: "\e00c";
+}
