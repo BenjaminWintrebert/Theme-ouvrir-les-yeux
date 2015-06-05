@@ -10,7 +10,7 @@ $count = 1;
                 <div class="article_container">
                 <a href="<?php the_permalink(); ?>"><div class="article_image" style="background-image:url(<?php echo catch_that_image() ?>);"></div></a>
                 <div class="article_desc">
-                    <h1><a href="<?php the_permalink(); ?>"><?php echo shortened_title(); ?></a></h1>
+                    <h1 class="hyphenate"><a href="<?php the_permalink(); ?>"><?php echo shortened_title(); ?></a></h1>
                     <div class="separator"></div>
                     <?php the_excerpt(); ?>
                 </div>

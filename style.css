@@ -404,14 +404,10 @@ body{
 }
 
 .article_container h1{
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 }
 
 .article_desc{
