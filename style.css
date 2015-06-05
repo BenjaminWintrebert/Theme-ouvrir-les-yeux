@@ -407,4 +407,10 @@ position:absolute;
     font-size: 1.3em;
 }
 
+.separator{
+    width: 80%;
+    height:1px;
+    background-color:black;
+    margin:0 auto;
+}
 /************FIN_ARTICLES*************/
