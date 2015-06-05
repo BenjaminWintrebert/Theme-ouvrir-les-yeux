@@ -10,6 +10,7 @@ $count = 1;
                 <div class="article_container">
                 <a href="<?php the_permalink(); ?>"><div class="article_image" style="background-image:url(<?php echo catch_that_image() ?>);"></div></a>
                 <h1><a href="<?php the_permalink(); ?>"><?php echo shortened_title(); ?></a></h1>
+                <hr>
                 <?php the_excerpt(); ?>
             </div>
             </div>
