@@ -83,9 +83,11 @@ function wpbootstrap_scripts_with_jquery()
     $js_directory = get_template_directory_uri() . '/bootstrap/js/'; 
     wp_register_script( 'bootstrap', $js_directory . 'bootstrap.js', 'jquery', '1.0' ); 
     wp_register_script( 'menu', $js_directory . 'script.js', 'jquery', '1.0' ); 
+    wp_register_script( 'hyphenator', $js_directory . 'hyphenator.js', 'jquery', '1.0' );
     wp_enqueue_script( 'jquery' ); 
     wp_enqueue_script( 'bootstrap' ); 
     wp_enqueue_script( 'menu' ); 
+    wp_enqueue_script( 'hyphenator' );
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
@@ -112,7 +114,7 @@ function shortened_title() {
     $original_title = get_the_title();
     $title = html_entity_decode($original_title, ENT_QUOTES, "UTF-8");
     // indiquer le nombre de caratère
-    $limit = "80";
+    $limit = "65";
     // fin du titre couper
     $ending="...";
     if(strlen($title) >= ($limit+3)) {
