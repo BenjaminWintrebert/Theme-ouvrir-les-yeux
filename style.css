@@ -347,8 +347,9 @@ position:absolute;
     height: 50px;
     width: 40px;
     z-index:99999;
-    background:black;
+    background:transparent;
     color:white;
+    border:none;
 }
     
     .dropdown-menu .btn-nav{
@@ -358,8 +359,9 @@ position:absolute;
     height: 50px;
     width: 40px;
     z-index:99999;
-        background: white;
-        color:black;
+        background: transparent;
+        color:white;
+        border:none;
         
 }
 }    
