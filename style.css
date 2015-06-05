@@ -24,7 +24,7 @@ body{
 }
 
 /******************************/
-/*          WIDGETS           */
+/*          ACCESS           */
 /******************************/
 
 #pre-nav{
@@ -44,9 +44,25 @@ body{
     margin-right: 5px;
 }
 
+/************FIN_ACCESS******************/
+
+
 /******************************/
-/*           MENU             */
+/*           MENU >768px      */
 /******************************/
+
+@media screen and (min-width:768px){
+    
+    #menu-primary{
+ width:100%;  
+    text-align: center;
+     font-size:13px;
+    font-weight: bold;
+}
+
+.collapse{
+ padding:0;   
+}
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color:  transparent; 
@@ -92,10 +108,17 @@ body{
 
 #menu li li li{
     background: #4a763f !important;
-    border-left:2px solid white;
-    margin-right:0px;
-    margin-top:0px;
-    margin-bottom: 2px;
+    margin-left:2px;
+    border-left:0px;
+    border-bottom:4px solid white;
+    border-top:0px;
+    border-right: 2px solid white;
+    margin-top:-2px;
+    
+}
+
+#menu li li li:last-child{
+     border-bottom:2px solid white;  
 }
 
 #menu li li li:hover{
@@ -129,8 +152,6 @@ body{
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: #2b425c;
 }
-
-@media screen and (min-width:768px){
     #menu ul li:hover > ul{display:block;}
 /* Sous-menu 1 */
 #menu ul ul{
@@ -156,34 +177,199 @@ body{
  padding:0;
     margin:0;
 }
-}
-
-button{
+    button{
     display: none;
 }
+    @media screen and (max-width:1200px){
+     #menu-primary{
+     font-size:11px;
+}
+        #menu ul ul{
+    font:lighter 8pt Arial, Helvetica, sans-serif;
+}
+    }
+        
+        @media screen and (max-width:992px){
+     #menu-primary{
+     font-size:9px;
+}
+            #menu ul ul{
+    font:lighter 7pt Arial, Helvetica, sans-serif;
+}
+   
+    }
+}
+
+/************FIN_MENU >768px*************/
+
+/******************************/
+/*           MENU <768px      */
+/******************************/
 
 @media screen and (max-width:768px){
-button{
-    display: block;
- background:red;
-    color:white;
-    z-index:9999;
-}
-     #menu li{  
-    width:100%;
-}
-}
-
-#menu-primary{
+    
+    #menu-primary{
  width:100%;  
     text-align: center;
-     font-size:13px;
+     font-size:20px;
     font-weight: bold;
+        
+}
+    .navbar-nav {
+   margin:0!important; 
+}
+    
+    .dropdown-menu{    
+    padding-bottom: 0px;
+    padding-top: 0px;
+ 
+    }
+
+   .navbar-collapse{ 
+    padding-right: 0px;
+    padding-left: 0px;
+   }
+    
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color:  transparent; 
+}
+    .menu-item{
+         border-top:4px solid white;
+    }
+
+#menu li{
+    position:relative;
+    display:block;  
+    background: #e02126!important;
+    width:100%;
+}
+    
+#menu li li{
+    background: #2b425c !important;
+    width:90%;
+    margin:auto;
+}
+    
+    #menu li li a{
+    width:100%;
+        text-align:center;
 }
 
-.collapse{
- padding:0;   
+#menu li li li{
+    background: #4a763f !important;   
 }
+
+#menu li li li li{
+    background: #555555 !important;
+}
+#menu li li li li:hover{
+    background: black !important;
+}
+
+#menu a{
+    display: inline-block;
+    color:white;
+    text-decoration:none; 
+    width:100%;
+    line-height:50px;
+    padding:0;
+}
+    
+         #menu-primary li a:hover{
+   font-size:26px;
+}
+    
+   .dropdown-menu li a{
+       font-weight: bold;
+       font-size:13px!important;
+}
+    
+    .dropdown-menu li a:hover{
+    font-size:16px!important;
+    }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #e02126;
+}
+    
+.navbar-header{
+ background: #2b425c;   
+}
+    
+    .navbar-default .navbar-toggle {
+  border-color: white;
+}
+    
+.navbar-toggle {
+  border: 2px solid transparent;
+}  
+    
+ .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+    
+    .navbar-toggle:hover,.navbar-toggle:focus,.navbar-toggle:active {
+ background: white!important;
+}  
+    
+.navbar-toggle:hover .icon-bar,.navbar-toggle:focus .icon-bar,.navbar-toggle:active .icon-bar {
+ background: red!important;
+}  
+    
+a.navbar-brand{
+ color:white !important; 
+ width:90% !important;
+ text-align:center;
+ font-size:30px;
+    font-weight: bold;
+ text-transform: capitalize;
+    letter-spacing:5px;
+}
+
+@media screen and (max-width:610px){
+  a.navbar-brand{ 
+      width:80% !important;
+ font-size:20px;
+    letter-spacing:3px;
+    
+}  
+}
+
+.navbar-nav .open .dropdown-menu {
+   background-color: white;     
+}
+    
+@media screen and (max-width:768px){
+li .btn-nav{
+position:absolute; 
+    left:0; 
+    top:0; 
+    height: 50px;
+    width: 40px;
+    z-index:99999;
+    background:black;
+    color:white;
+}
+    
+    .dropdown-menu .btn-nav{
+position:absolute; 
+    left:0; 
+    top:0; 
+    height: 50px;
+    width: 40px;
+    z-index:99999;
+        background: white;
+        color:black;
+        
+}
+}    
+}
+
+/************FIN_MENU <768px*************/
+
+
+
+
 
 /******************************/
 /*    Affiche des articles    */
@@ -218,3 +404,5 @@ button{
 .article_container h1{
     font-size: 1.3em;
 }
+
+/************FIN_ARTICLES*************/
