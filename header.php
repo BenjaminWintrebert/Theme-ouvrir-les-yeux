@@ -34,15 +34,27 @@
                 <div class="col-md-12">
                     <div id="pre-nav">
                         <div id="don-soutien" class="col-md-3">
-
                             <a href=#><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don.png" alt="Bouton des dons"/>DON</a>
                             <a href=#><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien.png"  alt="Bouton des soutiens"/>SOUTIEN</a>  
                         </div>
                         <div id="mediatheque" class="col-md-3">
-                            dfdf
+                            <a href=#><span class="flaticon-computerscreen11"></span></a>
+                            <a href=#><span class="flaticon-picture64"></span></a>
+                            <a href=#><span class="flaticon-news2"></span></a>
+                            <a href=#><span class="flaticon-headphone4"></span></a>
                         </div>
                         <div id="recherche" class="col-md-3">
-                            dfdf
+
+                            <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+                                <div class="input-group custom-search-form">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" value="<?php the_search_query(); ?>" name='s' id='s' class="form-control" maxlength="64" placeholder="Recherchez...">
+                                </div><!-- /input-group -->
+                            </form>
                         </div>
                         <div id="accessibilite" class="col-md-3">
                             fddfdf
@@ -51,30 +63,30 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="row">
                 <div class="header_ban col-md-12">
-            <nav id="menu" class="navbar navbar-default" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header visible-xs">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
-                </div>
+                    <nav id="menu" class="navbar navbar-default" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header visible-xs">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+                        </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <?php wp_nav_menu(array(
-                            'container_class' => 'menu-header',
-                            'theme_location' => 'primary',
-                            'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>',
-                            'walker' => new BS3_Walker_Nav_Menu,
-                        )); ?>
-                </div><!-- /.navbar-collapse -->
-            </nav>
-                  </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            <?php wp_nav_menu(array(
+    'container_class' => 'menu-header',
+    'theme_location' => 'primary',
+    'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>',
+    'walker' => new BS3_Walker_Nav_Menu,
+)); ?>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
             </div>

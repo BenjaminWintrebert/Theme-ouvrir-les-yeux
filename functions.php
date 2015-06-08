@@ -46,7 +46,7 @@ class BS3_Walker_Nav_Menu extends Walker_Nav_Menu {
         if ( is_object($args) && !empty($args->has_children) )
         {
             $link_after = $args->link_after;
-            $args->link_after = '</a><button class="btn-nav"><div class="show glyphicon-plus glyphicon"></div></button>';
+            $args->link_after = '</a><button class="btn-nav"><span class="show glyphicon-plus glyphicon"></span></button><a style="display: none;">';
         }
 
         parent::start_el($output, $item, $depth, $args, $id);
@@ -122,5 +122,44 @@ function shortened_title() {
     }
     echo $title;
 }
+
+function add_scripts() {
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'jquery-ui-autocomplete' );
+    wp_register_style( 'jquery-ui-styles','http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' );
+    wp_enqueue_style( 'jquery-ui-styles' );
+    wp_register_script( 'my-autocomplete', get_template_directory_uri() . '/bootstrap/js/my-autocomplete.js', array( 'jquery', 'jquery-ui-autocomplete' ), '1.0', false );
+    wp_localize_script( 'my-autocomplete', 'MyAutocomplete', array( 'url' => admin_url( 'admin-ajax.php' ) ) );
+    wp_enqueue_script( 'my-autocomplete' );
+}
+
+add_action( 'wp_enqueue_scripts', 'add_scripts' );
+
+function my_search() {
+    $term = strtolower( $_GET['term'] );
+    $suggestions = array();
+
+    $loop = new WP_Query( 's=' . $term );
+
+    while( $loop->have_posts() ) {
+        $loop->the_post();
+        $suggestion = array();
+        $suggestion['label'] = get_the_title();
+        $suggestion['link'] = get_permalink();
+
+        $suggestions[] = $suggestion;
+    }
+
+    wp_reset_query();
+
+
+    $response = json_encode( $suggestions );
+    echo $response;
+    exit();
+
+}
+
+add_action( 'wp_ajax_my_search', 'my_search' );
+add_action( 'wp_ajax_nopriv_my_search', 'my_search' );
 
 ?>
