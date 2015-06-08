@@ -476,10 +476,10 @@ button:focus {outline:0 !important;}
 .article_container{
     height:300px;
     margin-bottom: 20px;
-    -moz-box-shadow: 0px 0px 3px 0px #000000;
-    -webkit-box-shadow: 0px 0px 3px 0px #000000;
-    -o-box-shadow: 0px 0px 3px 0px #000000;
-    box-shadow: 0px 0px 3px 0px #000000;
+    -moz-box-shadow: 0px 0px 5px 0px #000000;
+    -webkit-box-shadow: 0px 0px 5px 0px #000000;
+    -o-box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow: 0px 0px 5px 0px #000000;
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=6);
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -493,11 +493,29 @@ button:focus {outline:0 !important;}
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: justify;
+    line-height: 20px;
 }
 
 .article_desc{
     width: 95%; 
     margin: 0 auto;
+}
+
+.article_date{
+    display: none;
+    width:100%;
+    text-align:center;
+    height:100%;
+    line-height: 150px;
+    background-color: rgba(0,0,0,0.8);
+    color:white!important;
+    font-weight: 700!important;
+    font-size:1.8em!important;
+    text-decoration: none!important;
+}
+
+.article_image:hover .article_date{
+    display: block;
 }
 
 .separator{
@@ -510,8 +528,8 @@ button:focus {outline:0 !important;}
 }
 
 .cellule{
-    width:15px;
-    height:15px;
+    width:18px;
+    height:18px;
     margin-right: 5px;
 }
 /************FIN_ARTICLES*************/
@@ -524,7 +542,7 @@ button:focus {outline:0 !important;}
 .sidebar h1{
     font-size:1.4em;
     color:#e02126;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .round{
@@ -533,5 +551,23 @@ button:focus {outline:0 !important;}
 
 .border-red{
     border:3px solid #e02126;
+}
+
+.devise{
+    font-weight: 400;
+    text-align:center;
+    margin-top:20px;
+}
+
+.parrain{
+    max-height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:768px){
+    .devise{
+        margin-top:30px;
+    }
 }
 /************FIN_SIDEBAR*************/

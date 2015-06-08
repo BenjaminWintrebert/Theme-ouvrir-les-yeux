@@ -22,7 +22,7 @@
     </head>
 
     <body>
-        <div class="container">            
+        <div class="container">
 
 
             <div class="row">
@@ -55,6 +55,7 @@
                                     <input type="text" value="<?php the_search_query(); ?>" name='s' id='s' class="form-control" maxlength="64" placeholder="Recherchez...">
                                 </div><!-- /input-group -->
                             </form>
+
                         </div>
                         <div id="accessibilite" class="col-md-3">
                             fddfdf
