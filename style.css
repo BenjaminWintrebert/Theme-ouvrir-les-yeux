@@ -443,6 +443,8 @@ body{
 /*******************************/
 .sidebar h1{
     font-size:1.4em;
+    color:#e02126;
+    font-weight: 400;
 }
 
 .round{
