@@ -459,4 +459,22 @@ body{
 .border-red{
     border:3px solid #e02126;
 }
+
+.devise{
+    font-weight: 400;
+    text-align:center;
+    margin-top:20px;
+}
+
+.parrain{
+    max-height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:768px){
+    .devise{
+        margin-top:30px;
+    }
+}
 /************FIN_SIDEBAR*************/

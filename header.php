@@ -51,30 +51,30 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="row">
                 <div class="header_ban col-md-12">
-            <nav id="menu" class="navbar navbar-default" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header visible-xs">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
-                </div>
+                    <nav id="menu" class="navbar navbar-default" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header visible-xs">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+                        </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <?php wp_nav_menu(array(
-                            'container_class' => 'menu-header',
-                            'theme_location' => 'primary',
-                            'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>',
-                            'walker' => new BS3_Walker_Nav_Menu,
-                        )); ?>
-                </div><!-- /.navbar-collapse -->
-            </nav>
-                  </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            <?php wp_nav_menu(array(
+    'container_class' => 'menu-header',
+    'theme_location' => 'primary',
+    'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>',
+    'walker' => new BS3_Walker_Nav_Menu,
+)); ?>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
             </div>
