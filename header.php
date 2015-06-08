@@ -22,7 +22,7 @@
     </head>
 
     <body>
-        <div class="container">            
+        <div class="container">
 
 
             <div class="row">
@@ -42,7 +42,7 @@
                             dfdf
                         </div>
                         <div id="recherche" class="col-md-3">
-                            dfdf
+
                         </div>
                         <div id="accessibilite" class="col-md-3">
                             fddfdf
