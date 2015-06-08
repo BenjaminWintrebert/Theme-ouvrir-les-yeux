@@ -46,6 +46,65 @@ body{
     /* text-align: center;*/
 }
 
+@media screen and (max-width:992px){
+    #pre-nav{
+        text-align: center;
+    }
+    #don-soutien{
+        width: 50%;
+        display: inline;
+    }
+
+    #don-soutien a{
+        font-weight: 900;
+        margin-right: 12px!important;
+    }
+
+    #don-soutien img{
+        width:8%!important;
+        margin-right: 5px;
+    }
+
+    #mediatheque{
+        width: 50%;
+        display: inline;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 4em!important;
+    }
+}
+
+@media screen and (max-width:550px){
+    #don-soutien{
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    }
+    #mediatheque{
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #recherche{
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    #don-soutien img {
+        width: 20%!important;
+        margin-top:15px !important;
+        margin-left: 8px!important;
+        margin-right: 8px!important;
+    }
+    #don-soutien a {
+        margin-right: 10px!important;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 3.5em!important;
+    }
+}
+
 #pre-nav a{
     color:#2b425c;   
     text-decoration: none;
@@ -56,15 +115,20 @@ body{
 }
 
 #don-soutien img{
-    width:10%;
+    width:14%;
     margin-right: 5px;
+}
+
+#don-soutien a{
+    font-weight: 900;
+    margin-right: 20px;
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-family: Flaticon;
-    font-size: 3em;
+    font-size: 2.8em;
     font-style: normal;
-    margin-right: 15px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
@@ -298,6 +362,10 @@ button:focus {outline:0 !important;}
 
     .navbar-nav {
         margin:0!important;
+    }
+
+    #accessibilite{
+        display: none;
     }
 
     .dropdown-menu{    
