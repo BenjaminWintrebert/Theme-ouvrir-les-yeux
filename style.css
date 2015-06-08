@@ -1,6 +1,10 @@
-@import url('bootstrap/css/bootstrap.css'); 
-@import url('bootstrap/fonts/flaticon.css'); 
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/fonts/flaticon.css');
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:300);
 
+*{
+    font-family: 'Comfortaa', cursive;
+}
 body{
     border-top:4px solid #e02126;
     background-color:black;
@@ -435,3 +439,23 @@ body{
     margin-right: 5px;
 }
 /************FIN_ARTICLES*************/
+
+
+
+/*******************************/
+/*           sidebar           */
+/*******************************/
+.sidebar h1{
+    font-size:1.4em;
+    color:#e02126;
+    font-weight: 400;
+}
+
+.round{
+    border-radius:1000px;
+}
+
+.border-red{
+    border:3px solid #e02126;
+}
+/************FIN_SIDEBAR*************/
