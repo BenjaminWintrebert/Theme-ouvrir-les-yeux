@@ -605,7 +605,7 @@ button:focus {outline:0 !important;}
 
 
 /*******************************/
-/*           sidebar           */
+/*           Sidebar           */
 /*******************************/
 .sidebar h1{
     font-size:1.4em;
@@ -639,3 +639,57 @@ button:focus {outline:0 !important;}
     }
 }
 /************FIN_SIDEBAR*************/
+
+/*******************************/
+/*           Footer           */
+/*******************************/
+
+#black-footer{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: black;
+    text-align: center;
+}
+
+#black-footer a{
+    color:white !important;
+    text-decoration: none;
+    border-right: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#last-link-footer{
+    border:0!important;
+}
+
+#black-footer a:hover{
+    color:#e02126!important;
+}
+
+
+#white-footer{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding:2px 0px;
+}
+
+@media screen and (max-width:992px){
+    #black-footer a{
+        font-size: 15px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .disp{
+        display: none;
+    }
+
+    #last-link-footer-disp{
+        border:0!important;
+    }
+
+}
+
+/************FIN_FOOTER**********/
