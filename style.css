@@ -1,4 +1,5 @@
 @import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/fonts/flaticon.css');
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:300);
 
 *{
@@ -351,8 +352,10 @@ body{
             height: 50px;
             width: 40px;
             z-index:99999;
-            background:black;
+            background:transparent;
             color:white;
+            border:none;
+
         }
 
         .dropdown-menu .btn-nav{
@@ -362,8 +365,9 @@ body{
             height: 50px;
             width: 40px;
             z-index:99999;
-            background: white;
-            color:black;
+            background: transparent;
+            color:white;
+            border:none;
 
         }
     }
