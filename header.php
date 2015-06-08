@@ -42,7 +42,7 @@
                             dfdf
                         </div>
                         <div id="recherche" class="col-md-3">
-                            dfdf
+
                         </div>
                         <div id="accessibilite" class="col-md-3">
                             fddfdf
