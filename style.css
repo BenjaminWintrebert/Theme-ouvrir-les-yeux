@@ -70,7 +70,7 @@ body{
         display: inline;
     }
     [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 1.5em!important;
+        font-size: 4em!important;
     }
 }
 
@@ -101,7 +101,7 @@ body{
         margin-right: 10px!important;
     }
     [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 2em!important;
+        font-size: 3.5em!important;
     }
 }
 
@@ -126,7 +126,7 @@ body{
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-family: Flaticon;
-    font-size: 2em;
+    font-size: 2.8em;
     font-style: normal;
     margin-right: 10px;
     vertical-align: middle;
@@ -651,6 +651,17 @@ button:focus {outline:0 !important;}
 
 .bouton_sidebar img{
     height: 45px;
+    margin-top:3px;
+    margin-left:5px;
+}
+
+.bouton_container{
+    margin:auto;
+}
+
+.bouton_sidebar span{
+    color:white;
+    font-size: 1em;
 }
 
 .wysija-paragraph{
@@ -659,6 +670,7 @@ button:focus {outline:0 !important;}
     padding:5px;
 }
 
+/* Newsletter */
 .widget_wysija input[name="wysija[user][email]"],.widget_wysija input[name="wysija[user][firstname]"] {
     width: 100%;
     padding:6px 12px 6px 12px;

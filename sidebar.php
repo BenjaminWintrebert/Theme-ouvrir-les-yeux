@@ -21,12 +21,12 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="bouton_sidebar">
-                    <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don_b.png" class="btn-ds"/> <span>Don</span>
+                    <div class="bouton_container"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don_b.png" class="btn-ds"/> <span>Don</span></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="bouton_sidebar">
-                    <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien_b.png" class="btn-ds"/> <span>Soutiens</span>
+                    <div class="bouton_container"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien_b.png" class="btn-ds"/> <span>Soutiens</span></div>
                 </div>
             </div>
         </div>
