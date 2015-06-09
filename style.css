@@ -70,7 +70,7 @@ body{
         display: inline;
     }
     [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 4em!important;
+        font-size: 1.5em!important;
     }
 }
 
@@ -101,7 +101,7 @@ body{
         margin-right: 10px!important;
     }
     [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 3.5em!important;
+        font-size: 2em!important;
     }
 }
 
@@ -126,7 +126,7 @@ body{
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-family: Flaticon;
-    font-size: 2.8em;
+    font-size: 2em;
     font-style: normal;
     margin-right: 10px;
     vertical-align: middle;
