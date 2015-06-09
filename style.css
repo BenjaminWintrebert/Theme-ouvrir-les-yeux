@@ -14,6 +14,7 @@ input:focus{
 
 body{
     border-top:4px solid #e02126;
+    border-bottom:4px solid #e02126;
     background-color:black;
 }
 
@@ -554,6 +555,7 @@ button:focus {outline:0 !important;}
     border-radius: 5px;
     background-color: white;
     overflow: hidden;
+    border:1px solid #7c7c7c;
 }
 
 .article_container h1{
@@ -561,8 +563,18 @@ button:focus {outline:0 !important;}
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: justify;
-    line-height: 20px;
+    line-height: 22px;
 }
+
+.hyphenate a{
+    color:#2b425c;
+    font-weight:bold;
+}
+
+.hyphenate a:hover{
+    color:#e02126;
+}
+
 
 .article_desc{
     width: 95%; 
@@ -582,6 +594,10 @@ button:focus {outline:0 !important;}
     text-decoration: none!important;
 }
 
+.article_container a:hover{
+    text-decoration:none!important;
+}
+
 .article_image:hover .article_date{
     display: block;
 }
@@ -596,8 +612,8 @@ button:focus {outline:0 !important;}
 }
 
 .cellule{
-    width:18px;
-    height:18px;
+    width:24px;
+    height:24px;
     margin-right: 5px;
 }
 /************FIN_ARTICLES*************/
