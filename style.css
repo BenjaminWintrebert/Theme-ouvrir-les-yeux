@@ -610,12 +610,29 @@ button:focus {outline:0 !important;}
     margin-bottom: 10px;
 }
 
+.wysija-paragraph{
+    width:50%;
+    display: table-cell;
+    padding:5px;
+}
+
 .widget_wysija input[name="wysija[user][email]"],.widget_wysija input[name="wysija[user][firstname]"] {
     width: 100%;
-    height: 34px;
+    padding:6px 12px 6px 12px;
+    border: 2px solid #2b425c;
+    border-radius: 3px;
+    display: inline-block;
+
 }
 
 .wysija-submit-field {
-    background-color: #2b425c;
+    background-color: #e02126;
+    margin:0;
+    color:white;
+    margin-top: 0px!important;
+    margin-left: 5px;
+    padding:6px 12px 6px 12px;
+    border: none;
+    margin-bottom: 10px;
 }
 /************FIN_SIDEBAR*************/
