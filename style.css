@@ -536,10 +536,12 @@ button:focus {outline:0 !important;}
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 2px solid #e02126;
+    filter: blur(2px);
 }
 
 .article_image:hover{
     opacity:0.8;
+    filter: blur(10px);
 }
 
 .article_container{
