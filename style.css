@@ -654,6 +654,60 @@ button:focus {outline:0 !important;}
         margin-top:30px;
     }
 }
+
+.parrain_container{
+    margin-bottom: 10px;
+}
+
+.bouton_sidebar{
+    height:50px;
+    background-color:#2b425c;
+    width:100%;
+}
+
+.bouton_sidebar img{
+    height: 45px;
+    margin-top:3px;
+    margin-left:5px;
+}
+
+.bouton_container{
+
+}
+
+.bouton_sidebar span{
+    color:white;
+    font-size: 1em;
+}
+
+.wysija-paragraph{
+    width:50%;
+    display: table-cell;
+    padding:5px;
+}
+
+/* Newsletter */
+.widget_wysija input[name="wysija[user][email]"],.widget_wysija input[name="wysija[user][firstname]"] {
+    width: 100%;
+    padding:6px 12px 6px 12px;
+    border: 2px solid #2b425c;
+    border-radius: 3px;
+    display: inline-block;
+
+}
+
+.wysija-submit-field {
+    background-color: #e02126;
+    margin:0;
+    color:white;
+    margin-top: 0px!important;
+    /*margin-left: 5px;*/
+    padding:6px 12px 6px 12px;
+    border: none;
+    margin-bottom: 10px;
+width: 100%;
+    border-radius:3px;
+}
 /************FIN_SIDEBAR*************/
 
 /*******************************/

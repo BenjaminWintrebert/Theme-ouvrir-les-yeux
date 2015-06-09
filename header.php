@@ -32,7 +32,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div id="pre-nav">
+                    <div class="row" id="pre-nav">
                         <div id="don-soutien" class="col-md-3">
                             <a href=#><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don.png" alt="Bouton des dons"/>DON</a>
                             <a href=#><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien.png"  alt="Bouton des soutiens"/>SOUTIEN</a>  
