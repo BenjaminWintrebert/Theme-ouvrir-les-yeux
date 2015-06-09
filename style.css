@@ -687,7 +687,7 @@ button:focus {outline:0 !important;}
 }
 
 .bouton_sidebar_:hover{
-
+    filter: contrast(200%);
 }
 
 .wysija-paragraph{
