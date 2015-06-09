@@ -570,4 +570,52 @@ button:focus {outline:0 !important;}
         margin-top:30px;
     }
 }
+
+.parrain_container{
+    margin-bottom: 10px;
+}
+
+.bouton_sidebar{
+    height:50px;
+    background-color:#2b425c;
+    width:100%;
+    padding:10px;
+}
+
+.ds-b{
+    height:45px;
+    position: absolute;
+    top:50%;
+    margin-top:-22.5px;
+    margin-left: 10px;
+}
+
+.d-b-t{
+    margin-left: 55px;
+    line-height: 50px;
+    color: white;
+
+}
+
+.s-b-t{
+    margin-left: 55px;
+    line-height: 50px;
+    color: white;
+}
+
+
+
+#n{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.widget_wysija input[name="wysija[user][email]"],.widget_wysija input[name="wysija[user][firstname]"] {
+    width: 100%;
+    height: 34px;
+}
+
+.wysija-submit-field {
+    background-color: #2b425c;
+}
 /************FIN_SIDEBAR*************/
