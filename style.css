@@ -647,11 +647,10 @@ button:focus {outline:0 !important;}
     height:50px;
     background-color:#2b425c;
     width:100%;
-    padding:10px;
 }
 
 .bouton_sidebar img{
-    max-height: 45px;
+    height: 45px;
 }
 
 .wysija-paragraph{
