@@ -21,12 +21,12 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="bouton_sidebar">
-                    <span class="d-b-t">Je donne</span>
+                    <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don_b.png" class="btn-ds img-responsive"/> <span>Don</span>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="bouton_sidebar">
-                    <span class="s-b-t">Nous soutenir</span>
+                    <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien_b.png" class="btn-ds img-responsive"/> <span>Soutiens</span>
                 </div>
             </div>
         </div>

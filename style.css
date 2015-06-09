@@ -650,32 +650,8 @@ button:focus {outline:0 !important;}
     padding:10px;
 }
 
-.ds-b{
-    height:45px;
-    position: absolute;
-    top:50%;
-    margin-top:-22.5px;
-    margin-left: 10px;
-}
-
-.d-b-t{
-    margin-left: 55px;
-    line-height: 50px;
-    color: white;
-
-}
-
-.s-b-t{
-    margin-left: 55px;
-    line-height: 50px;
-    color: white;
-}
-
-
-
-#n{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.bouton_sidebar img{
+    max-height: 45px;
 }
 
 .wysija-paragraph{
@@ -698,10 +674,12 @@ button:focus {outline:0 !important;}
     margin:0;
     color:white;
     margin-top: 0px!important;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     padding:6px 12px 6px 12px;
     border: none;
     margin-bottom: 10px;
+width: 100%;
+    border-radius:3px;
 }
 /************FIN_SIDEBAR*************/
 
