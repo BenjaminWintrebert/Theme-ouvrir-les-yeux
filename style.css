@@ -663,16 +663,13 @@ button:focus {outline:0 !important;}
     height:50px;
     background-color:#2b425c;
     width:100%;
+    line-height: 50px;
 }
 
 .bouton_sidebar img{
     height: 45px;
-    margin-top:3px;
-    margin-left:5px;
-}
-
-.bouton_container{
-
+    float: right;
+    margin-top: 3px;
 }
 
 .bouton_sidebar span{
@@ -680,10 +677,35 @@ button:focus {outline:0 !important;}
     font-size: 1em;
 }
 
+.bouton_sidebar_{
+    height: 50px;
+    background-color: #e02126;
+    margin-top:10px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+.bouton_sidebar_:hover{
+
+}
+
 .wysija-paragraph{
     width:50%;
     display: table-cell;
-    padding:5px;
+    padding: 5px;
+}
+
+.wysija-paragraph{
+    width:50%;
+    display: table-cell;
+    padding: 0px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.wysija-paragraph:nth-child(2){
+    padding-right: 0;
 }
 
 /* Newsletter */
@@ -693,7 +715,6 @@ button:focus {outline:0 !important;}
     border: 2px solid #2b425c;
     border-radius: 3px;
     display: inline-block;
-
 }
 
 .wysija-submit-field {
@@ -707,6 +728,18 @@ button:focus {outline:0 !important;}
     margin-bottom: 10px;
     width: 100%;
     border-radius:3px;
+}
+
+.fb{
+    background-color: #3B5998;
+}
+
+.tw{
+    background-color: #4099FF;
+}
+
+.rss{
+    background-color: #FF6600;
 }
 /************FIN_SIDEBAR*************/
 
