@@ -21,7 +21,7 @@ $count = 1;
                 </div>
             </div>
 
-        <?php if($count%2==0){ ?>
+            <?php if($count%2==0){ ?>
         </div><div class="row">
         <?php }
 $count ++;
@@ -30,7 +30,13 @@ endwhile; else:
         <p><?php _e('Sorry, this page does not exist.'); ?></p>
         <?php endif; ?>
         </div>
+        <div class="row pagination">
+            <?php
+if ( function_exists('wp_bootstrap_pagination') )
+    wp_bootstrap_pagination();
+            ?>
 
+        </div>
     </div>
     <div class="col-md-4">
         <?php get_sidebar(); ?>
