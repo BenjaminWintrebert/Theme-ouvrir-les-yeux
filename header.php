@@ -23,8 +23,6 @@
 
     <body>
         <div class="container">
-
-
             <div class="row">
                 <div class="header_ban col-md-12">
                     <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/header.png" alt="Bannière Ouvrir Les Yeux" class="img-responsive"/></a>
@@ -52,13 +50,13 @@
                                             <span class="glyphicon glyphicon-search"></span>
                                         </button>
                                     </span>
-                                    <input type="text" value="<?php the_search_query(); ?>" name='s' id='s' class="form-control" maxlength="64" placeholder="Recherchez...">
+                                    <input type="text" value="<?php the_search_query(); ?>" name='s' id='s' class="form-control" maxlength="64" placeholder="Rechercher...">
                                 </div><!-- /input-group -->
                             </form>
 
                         </div>
                         <div id="accessibilite" class="col-md-3">
-                            fddfdf
+                            BARRE ACCESSIBILITE
                         </div>
 
                     </div>

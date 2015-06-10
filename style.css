@@ -145,7 +145,7 @@ body{
     color:black;
 }
 
-.btn-default {
+.btn-default,.btn-default:focus,.btn-default:active {
     color: white;
     background-color: #2b425c;
     border-color: #2b425c;
