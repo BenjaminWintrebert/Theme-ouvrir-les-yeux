@@ -22,7 +22,7 @@ $count = 1;
 
                                     <div class="oly-item-elt-inner">
                                         <div class="oly-item-elt-title">
-                                            <a href="/fr/mmorpg/actualites/news/435682-retrouvez-ankama-japan-expo">
+                                            <a href="<?php the_permalink(); ?>">
                                                 <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/cellule.png" class="cellule" alt="L'article s'intitule : <?php echo get_the_title(); ?>
                                                                                                                                                       . Il a été rédigé le : <?php echo get_the_date() ?> à <?php echo get_the_time() ?>"/>
                                             </a>
@@ -44,7 +44,7 @@ $count = 1;
                                     <div class="oly-ellipsis-text"></div>
                                     <div class="oly-bottom">
                                         <div class="oly-comments pull-left">
-                                            <a class="comment" href="/fr/mmorpg/actualites/news/435682-retrouvez-ankama-japan-expo#oly-block-posts">
+                                            <a class="comment" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
                                                 <i class="glyphicon glyphicon-thumbs-up" style="font-size: 16px;"></i>
                                                 <span>Partager</span>
                                             </a>

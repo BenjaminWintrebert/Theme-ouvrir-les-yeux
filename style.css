@@ -23,14 +23,13 @@
     box-sizing: border-box;
 }
 
-
 a:hover, a:focus {
     text-decoration: none!important;
 }
 
 .container{
     min-width:200px!important;
-    background:white;   
+    background:white;
 }
 
 input:focus{
