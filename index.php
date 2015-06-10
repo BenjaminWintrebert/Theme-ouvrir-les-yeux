@@ -34,7 +34,7 @@ $count = 1;
 
 
 
-                                                    Ouvrir Les Yeux - <?php echo get_the_modified_date();?>                      </span>
+                                                    <div class="glyphicon glyphicon-time"></div> <?php echo get_the_date();?> à <?php echo get_the_time(); ?>                      </span>
                                             </span>
                                         </div>
                                         <div class="ak-item-elt-desc">
@@ -49,6 +49,7 @@ $count = 1;
                                                 <span>Partager</span>
                                             </a>
                                         </div>
+                                        <div class="ak-bottom-infos pull-left"></div>
                                     </div>
                                 </div>
                             </div>
