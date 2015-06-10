@@ -23,11 +23,13 @@
     box-sizing: border-box;
 }
 
-.container{
-    min-width:200px!important;
-}
 a:hover, a:focus {
     text-decoration: none!important;
+}
+
+.container{
+    min-width:200px!important;
+    background:white;
 }
 
 input:focus{
@@ -46,15 +48,6 @@ body{
     background-color:white;
 }
 
-.container{
-    background:white;   
-}
-
-.container-fluid {
-    padding:0;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .header_ban{
     padding: 0!important;
@@ -889,11 +882,11 @@ button:focus {outline:0 !important;}
 user agent stylesheetdiv {
     display: block;
 }
-.ak-main-container {
+.oly-main-container {
     margin-top: 0px;
     padding-top: 0px;
 }
-.ak-main-container {
+.oly-main-container {
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -956,10 +949,10 @@ user agent stylesheetdiv {
     padding-left: 6px;
     padding-right: 6px;
 }
-.ak-item-list {
+.oly-item-list {
     padding: 0;
 }
-.ak-grid-padding {
+.oly-grid-padding {
     padding: 12px;
 }
 .row {
@@ -974,50 +967,50 @@ user agent stylesheetdiv {
     .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
         float: left;
     }
-.ak-item-list .ak-item-elt, .ak-item-list .ak-item-elt-tiny {
+.oly-item-list .oly-item-elt, .oly-item-list .oly-item-elt-tiny {
     border-top-color: #b1ac9c;
 }
-.ak-item-list .ak-item-elt {
+.oly-item-list .oly-item-elt {
     padding: 0;
     position: relative;
 }
-.ak-item-list .ak-item-elt .ak-item-elt-content, .ak-item-list .ak-item-elt-tiny .ak-item-elt-content, .ak-item-list .ak-item-elt .ak-item-elt-content:hover, .ak-item-list .ak-item-elt-tiny .ak-item-elt-content:hover {
+.oly-item-list .oly-item-elt .oly-item-elt-content, .oly-item-list .oly-item-elt-tiny .oly-item-elt-content, .oly-item-list .oly-item-elt .oly-item-elt-content:hover, .oly-item-list .oly-item-elt-tiny .oly-item-elt-content:hover {
     background: #f3f2ed;
     border-radius: 5px;
-  border: 1px solid #5F5E5E;
-  -moz-box-shadow: 0px 0px 7px 0px #656565;
-  -webkit-box-shadow: 0px 0px 7px 0px #656565;
-  -o-box-shadow: 0px 0px 7px 0px #656565;
-  box-shadow: 0px 0px 5px 0px #656565;
-  filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=7);
+    border: 1px solid #5F5E5E;
+    -moz-box-shadow: 0px 0px 7px 0px #656565;
+    -webkit-box-shadow: 0px 0px 7px 0px #656565;
+    -o-box-shadow: 0px 0px 7px 0px #656565;
+    box-shadow: 0px 0px 5px 0px #656565;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=7);
 
 }
-.ak-item-list .ak-item-elt-content {
+.oly-item-list .oly-item-elt-content {
     background: #f3f2ed;
 }
-.ak-item-list .ak-item-elt-content {
+.oly-item-list .oly-item-elt-content {
     position: relative;
 }
-.ak-item-list .ak-item-elt-content {
+.oly-item-list .oly-item-elt-content {
     margin: 0;
     margin-top: 12px;
     margin-top: 1.2rem;
     transition: all 0.1s;
 }
-.ak-item-list .ak-item-elt .ak-link-img, .ak-item-list .ak-item-elt .ak-widget-video {
+.oly-item-list .oly-item-elt .oly-link-img, .oly-item-list .oly-item-elt .oly-widget-video {
     border-bottom-color: #e02126;
 }
-.ak-item-list .ak-link-img, .ak-item-list .ak-widget-video {
+.oly-item-list .oly-link-img, .oly-item-list .oly-widget-video {
     border-bottom: 4px solid;
     display: block;
     position: relative;
     z-index: 1;
 }
 
-.ak-item-list .ak-item-elt-title {
+.oly-item-list .oly-item-elt-title {
     background: #ffffff;
 }
-.ak-item-list .ak-item-elt-title {
+.oly-item-list .oly-item-elt-title {
     font-size: 26px;
     font-size: 2.6rem;
     display: block;
@@ -1026,15 +1019,15 @@ user agent stylesheetdiv {
     width: 100%;
     position: relative;
 }
-.ak-item-list .ak-item-elt-title>a {
+.oly-item-list .oly-item-elt-title>a {
     padding: 6px;
 }
-.ak-item-list .ak-item-elt-title img {
+.oly-item-list .oly-item-elt-title img {
     width: 53px;
     height: 53px;
     margin-top: -1px;
 }
-.ak-item-list .ak-item-elt-title .ak-text {
+.oly-item-list .oly-item-elt-title .oly-text {
     padding: 5px;
     padding: 0.5rem;
     display: table-cell;
@@ -1044,7 +1037,7 @@ user agent stylesheetdiv {
     vertical-align: top;
     z-index: 2;
 }
-.ak-item-list .ak-item-elt-title a {
+.oly-item-list .oly-item-elt-title a {
     font-family: "bebas_neueregular";
     display: table-cell;
     display: table-cell;
@@ -1054,18 +1047,18 @@ user agent stylesheetdiv {
 }
 
 @media screen and (max-width:1200px){
-    .ak-item-list .ak-item-elt-title a {
+    .oly-item-list .oly-item-elt-title a {
         font-size:20px;
     }
 }
 
 @media screen and (max-width:992px){
-    .ak-item-list .ak-item-elt-title a {
+    .oly-item-list .oly-item-elt-title a {
         font-size:25px;
     }
 }
 
-.ak-item-list .ak-item-elt-title .ak-text .ak-publication {
+.oly-item-list .oly-item-elt-title .oly-text .oly-publication {
     font-size: 13px;
     font-size: 1.3rem;
     line-height: 20px;
@@ -1077,22 +1070,22 @@ user agent stylesheetdiv {
     font-weight: bold;
 }
 
-.ak-item-list .ak-item-elt-title .ak-text .ak-publication a {
+.oly-item-list .oly-item-elt-title .oly-text .oly-publication a {
     display: inline;
 }
 
-.ak-item-list .ak-item-elt-title a {
+.oly-item-list .oly-item-elt-title a {
     color: #2b425c;
     height: 63px;
     vertical-align: middle;
 }
-.ak-item-list .ak-item-elt-title a:hover {
+.oly-item-list .oly-item-elt-title a:hover {
     color: #e02126;
 }
-.ak-item-list .ak-item-elt-title {
+.oly-item-list .oly-item-elt-title {
     background: #ffffff;
 }
-.ak-item-list .ak-item-elt-title {
+.oly-item-list .oly-item-elt-title {
     font-size: 26px;
     font-size: 2.6rem;
     display: block;
@@ -1101,30 +1094,30 @@ user agent stylesheetdiv {
     width: 100%;
     position: relative;
 }
-.ak-item-list .ak-item-elt-desc {
+.oly-item-list .oly-item-elt-desc {
     border-top: 1px dashed #b1ac9c;
     padding: 12px;
     position: relative;
 }
 
 @media (min-width:768px){
-    .ak-item-list .ak-item-elt-desc p{
+    .oly-item-list .oly-item-elt-desc p{
         font-size: 18px;
     }
 }
 
 @media (max-width:768px){
-    .ak-item-list .ak-item-elt-desc p{
+    .oly-item-list .oly-item-elt-desc p{
         font-size: 15px;
     }
 }
 
-.ak-item-list .ak-item-elt-inner {
+.oly-item-list .oly-item-elt-inner {
     background: #f3f2ed;
 }
 
 @media (min-width: 768px){
-    .ak-item-list .col-sm-6 .ak-ellipsis-text {
+    .oly-item-list .col-sm-6 .oly-ellipsis-text {
         display: block;
         height: 1.5em;
         margin-bottom: 0;
@@ -1135,7 +1128,7 @@ user agent stylesheetdiv {
     }
 }
 
-.ak-item-list .ak-ellipsis-text {
+.oly-item-list .oly-ellipsis-text {
     background: -moz-linear-gradient(top, rgba(248,248,248,0) 0%, #f8f8f8 80%, #f8f8f8 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(248,248,248,0)), color-stop(80%, #f8f8f8), color-stop(100%, #f8f8f8));
     background: -webkit-linear-gradient(top, rgba(248,248,248,0) 0%, #f8f8f8 80%, #f8f8f8 100%);
@@ -1144,21 +1137,21 @@ user agent stylesheetdiv {
     background: linear-gradient(to bottom, rgba(248,248,248,0) 0%, #f8f8f8 80%, #f8f8f8 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
-.ak-item-list .ak-ellipsis-text {
+.oly-item-list .oly-ellipsis-text {
     display: none;
 }
 
 
-.ak-item-list .ak-bottom {
+.oly-item-list .oly-bottom {
     border-top: 1px solid;
     overflow: hidden;
     position: relative;
 }
-.ak-item-list .ak-share, .ak-item-list .ak-comments {
+.oly-item-list .oly-share, .oly-item-list .oly-comments {
     position: relative;
     z-index: 2;
 }
-.ak-item-list .ak-comments, .ak-item-list .ak-share {
+.oly-item-list .oly-comments, .oly-item-list .oly-share {
     font-size: 23px;
     font-size: 2.3rem;
     border-bottom: medium none;
@@ -1168,16 +1161,17 @@ user agent stylesheetdiv {
     padding: 0 10px 0;
     text-align: center;
 }
+
 .pull-left {
     float: left;
 }
 .pull-left {
     float: left !important;
 }
-.ak-item-list .ak-comments svg, .ak-item-list .ak-share svg {
+.oly-item-list .oly-comments svg, .oly-item-list .oly-share svg {
     background-size: 20px auto;
 }
-.ak-item-list .ak-share svg, .ak-item-list .ak-comments svg {
+.oly-item-list .oly-share svg, .oly-item-list .oly-comments svg {
     width: 13px;
     height: 13px;
     display: inline-block;
@@ -1185,16 +1179,21 @@ user agent stylesheetdiv {
 svg:not(:root) {
     overflow: hidden;
 }
-.ak-item-list .ak-comments svg path, .ak-item-list .ak-share svg path {
+.oly-item-list .oly-comments svg path, .oly-item-list .oly-share svg path {
     fill: #4a763f;
 }
-.ak-item-list .ak-comments span, .ak-item-list .ak-share span {
+.oly-item-list .oly-comments span, .oly-item-list .oly-share span {
     color: #4a763f;
 }
-.ak-comments:hover span,.ak-comments span:hover{
+.comment:hover span,.comment span:hover{
     font-weight: bold!important;
 }
-.ak-item-list .ak-share span, .ak-item-list .ak-comments span {
+
+.comment i{
+    color:#4a763f;
+}
+
+.oly-item-list .oly-share span, .oly-item-list .oly-comments span {
     font-size: 15px;
     font-size: 1.5rem;
     display: inline-block;
@@ -1203,14 +1202,14 @@ svg:not(:root) {
     position: relative;
     top: -2px;
 }
-.ak-item-list .ak-comments span {
+.oly-item-list .oly-comments span {
     padding-right: 0.5em;
 }
 
-.ak-item-list .ak-bottom .ak-bottom-infos {
+.oly-item-list .oly-bottom .oly-bottom-infos {
     border-left-color: #dddac8!important;
 }
-.ak-item-list .ak-bottom .ak-bottom-infos {
+.oly-item-list .oly-bottom .oly-bottom-infos {
     font-size: 13px;
     font-size: 1.3rem;
     padding-left: 8px;
@@ -1222,17 +1221,17 @@ svg:not(:root) {
     position: relative;
     z-index: 2;
 }
-.ak-item-list .ak-bottom {
+.oly-item-list .oly-bottom {
     border-top-color: #dddac8!important;
 }
-.ak-item-list .ak-bottom {
+.oly-item-list .oly-bottom {
     border-top: 1px solid;
     overflow: hidden;
     position: relative;
 }
 
 @media (min-width: 768px){
-    .ak-item-list .col-sm-6 .ak-item-elt-inner {
+    .oly-item-list .col-sm-6 .oly-item-elt-inner {
         height: 210px;
         overflow: hidden;
     }

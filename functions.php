@@ -109,14 +109,14 @@ function catch_that_image() {
     return $first_img;
 }
 function new_title($after = '', $length) {
-   $shtitle = explode(' ', get_the_title(), $length);
-   if (count($shtitle)>=$length) {
-       array_pop($shtitle);
-       $shtitle = implode(" ",$shtitle). $after;
-   } else {
-       $shtitle = implode(" ",$shtitle);
-   }
-       return $shtitle;
+    $shtitle = explode(' ', get_the_title(), $length);
+    if (count($shtitle)>=$length) {
+        array_pop($shtitle);
+        $shtitle = implode(" ",$shtitle). $after;
+    } else {
+        $shtitle = implode(" ",$shtitle);
+    }
+    return $shtitle;
 }
 
 function add_scripts() {
