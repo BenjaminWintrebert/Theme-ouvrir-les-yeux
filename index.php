@@ -23,11 +23,13 @@ $count = 1;
                                     <div class="ak-item-elt-inner">
                                         <div class="ak-item-elt-title">
                                             <a href="/fr/mmorpg/actualites/news/435682-retrouvez-ankama-japan-expo">
-                                                <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/cellule.png" class="cellule" alt="L'article s'intitule : <?php  echo get_the_title() ?>. Il a été rédigé le : <?php echo get_the_modified_date() ?>"/>
+                                                <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/cellule.png" class="cellule" alt="L'article s'intitule : <?php echo get_the_title(); ?>
+. Il a été rédigé le : <?php echo get_the_modified_date() ?>"/>
                                             </a>
 
                                             <span class="ak-text">
-                                                <a href="<?php the_permalink(); ?>"><?php echo shortened_title(); ?></a>
+                                                <a href="<?php the_permalink(); ?>"><?php echo new_title('...', 5); ?>
+</a>
                                                 <span class="ak-publication">
 
 
