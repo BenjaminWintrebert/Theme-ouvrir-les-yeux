@@ -114,7 +114,7 @@ function shortened_title() {
     $original_title = get_the_title();
     $title = html_entity_decode($original_title, ENT_QUOTES, "UTF-8");
     // indiquer le nombre de caratère
-    $limit = "65";
+    $limit = "40";
     // fin du titre couper
     $ending="...";
     if(strlen($title) >= ($limit+3)) {
@@ -221,7 +221,7 @@ function wp_bootstrap_pagination( $args = array() ) {
 
     $firstpage = esc_attr( get_pagenum_link(1) );
     if ( $firstpage && (1 != $page) )
-        $echo .= '<li class="previous"><a href="' . $firstpage . '">' . __( 'Première', 'text-domain' ) . '</a></li>';
+        $echo .= '<li class="previous"><a title="' . __( 'Aller à la première page ', 'text-domain') .'" href="' . $firstpage . '">' . __( 'Première', 'text-domain' ) . '</a></li>';
     if ( $previous && (1 != $page) )
         $echo .= '<li><a href="' . $previous . '" title="' . __( 'Aller à la page précédente', 'text-domain') . '">' . $args['previous_string'] . '</a></li>';
 
@@ -242,7 +242,7 @@ function wp_bootstrap_pagination( $args = array() ) {
 
     $lastpage = esc_attr( get_pagenum_link($count) );
     if ( $lastpage ) {
-        $echo .= '<li class="next"><a href="' . $lastpage . '">' . __( 'Dernière', 'text-domain' ) . '</a></li>';
+        $echo .= '<li class="next"><a title="' . __( 'Aller à la dernière page','text-domain') .'" href="' . $lastpage . '">' . __( 'Dernière', 'text-domain' ) . '</a></li>';
     }
     if ( isset($echo) )
         echo $args['before_output'] . $echo . $args['after_output'];
