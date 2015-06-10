@@ -68,7 +68,7 @@ echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php'));
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row partenaire">
             <div class="col-md-12">
                 <?php include("partenaire.php"); ?>
             </div>

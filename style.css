@@ -23,8 +23,14 @@
     box-sizing: border-box;
 }
 
+
 a:hover, a:focus {
     text-decoration: none!important;
+}
+
+.container{
+    min-width:200px!important;
+    background:white;   
 }
 
 input:focus{
@@ -43,15 +49,6 @@ body{
     background-color:white;
 }
 
-.container{
-    background:white;   
-}
-
-.container-fluid {
-    padding:0;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .header_ban{
     padding: 0!important;
@@ -547,8 +544,8 @@ button:focus {outline:0 !important;}
     background-size: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 2px solid #e02126;
     filter: blur(2px);
+    background-position:top;
 }
 
 .article_image:hover{
@@ -813,6 +810,20 @@ button:focus {outline:0 !important;}
 .rss{
     background-color: #FF6600;
 }
+
+.partenaire{
+    margin-left:5px!important;
+    margin-right: 5px!important;
+}
+
+.partenaire h1{
+    color:white;
+    background-color: rgb(43,66,92);
+    padding:5px;
+    margin-left:-5px;
+    margin-right: -5px;
+    font-size:15px;
+}
 /************FIN_SIDEBAR*************/
 
 /*******************************/
@@ -966,6 +977,14 @@ user agent stylesheetdiv {
 }
 .ak-item-list .ak-item-elt .ak-item-elt-content, .ak-item-list .ak-item-elt-tiny .ak-item-elt-content, .ak-item-list .ak-item-elt .ak-item-elt-content:hover, .ak-item-list .ak-item-elt-tiny .ak-item-elt-content:hover {
     background: #f3f2ed;
+    border-radius: 5px;
+    border: 1px solid #5F5E5E;
+    -moz-box-shadow: 0px 0px 7px 0px #656565;
+    -webkit-box-shadow: 0px 0px 7px 0px #656565;
+    -o-box-shadow: 0px 0px 7px 0px #656565;
+    box-shadow: 0px 0px 5px 0px #656565;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=7);
+
 }
 .ak-item-list .ak-item-elt-content {
     background: #f3f2ed;
@@ -1143,6 +1162,7 @@ user agent stylesheetdiv {
     padding: 0 10px 0;
     text-align: center;
 }
+
 .pull-left {
     float: left;
 }
@@ -1166,9 +1186,14 @@ svg:not(:root) {
 .ak-item-list .ak-comments span, .ak-item-list .ak-share span {
     color: #4a763f;
 }
-.ak-comments:hover span,.ak-comments span:hover{
+.comment:hover span,.comment span:hover{
     font-weight: bold!important;
 }
+
+.comment i{
+    color:#4a763f;
+}
+
 .ak-item-list .ak-share span, .ak-item-list .ak-comments span {
     font-size: 15px;
     font-size: 1.5rem;

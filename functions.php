@@ -108,17 +108,15 @@ function catch_that_image() {
     }
     return $first_img;
 }
-function shortened_title() {
-    $original_title = get_the_title();
-    $title = html_entity_decode($original_title, ENT_QUOTES, "UTF-8");
-    // indiquer le nombre de caratère
-    $limit = "40";
-    // fin du titre couper
-    $ending="...";
-    if(strlen($title) >= ($limit+3)) {
-        $title = substr($title, 0, $limit) . $ending; 
+function new_title($after = '', $length) {
+    $shtitle = explode(' ', get_the_title(), $length);
+    if (count($shtitle)>=$length) {
+        array_pop($shtitle);
+        $shtitle = implode(" ",$shtitle). $after;
+    } else {
+        $shtitle = implode(" ",$shtitle);
     }
-    echo $title;
+    return $shtitle;
 }
 
 function add_scripts() {
