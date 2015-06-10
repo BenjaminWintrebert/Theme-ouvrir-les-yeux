@@ -2,10 +2,6 @@
 $count = 1;
 ?>
 
-
-
-
-
 <div class="row">
 
     <div class="main col-md-9">
