@@ -543,8 +543,8 @@ button:focus {outline:0 !important;}
     background-size: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 2px solid #e02126;
     filter: blur(2px);
+    background-position:top;
 }
 
 .article_image:hover{
@@ -830,6 +830,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .rss{
     background-color: #FF6600;
+}
+
+.partenaire{
+    margin-left:5px!important;
+    margin-right: 5px!important;
 }
 /************FIN_SIDEBAR*************/
 

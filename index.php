@@ -16,7 +16,8 @@ $count = 1;
                             <div class="ak-item-elt ak-universe-key-plus-dofus">
                                 <div class="ak-item-elt-content">
                                     <a class="ak-link-img" href="/fr/mmorpg/actualites/news/435682-retrouvez-ankama-japan-expo">
-                                        <img class="img-responsive" data-max="1200" data-src="<?php echo catch_that_image() ?>" alt="" src="<?php echo catch_that_image() ?>">
+                                        <div class="article_image" style="background-image:url(<?php echo catch_that_image() ?>)">
+                                        </div>
                                     </a>
 
                                     <div class="ak-item-elt-inner">
