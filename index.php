@@ -3,7 +3,7 @@ $count = 1;
 ?>
 
 <div class="row main">
-    <div class="col-md-8">
+    <div class="col-md-9">
         <div class="row article">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="col-md-6">
@@ -38,7 +38,7 @@ if ( function_exists('wp_bootstrap_pagination') )
 
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <?php get_sidebar(); ?>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row main">
-    <div class="col-md-8">
+    <div class="col-md-9">
         <div class="row article">
         <?php if (have_posts()) : ?> <?php while (have_posts()) : the_post(); ?> 
         <div class="post"> 
@@ -14,7 +14,7 @@
 
     </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <?php get_sidebar(); ?>
     </div>
 </div>
