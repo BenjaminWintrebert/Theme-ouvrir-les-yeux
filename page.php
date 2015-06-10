@@ -8,7 +8,7 @@
         <?php the_content(); ?>
 
         <?php endwhile; else: ?>
-        <p><?php _e('Sorry, this page does not exist.'); ?></p>
+        <p><?php _e("Désolé, cette page n'existe pas."); ?></p>
         <?php endif; ?>
 
     </div>
