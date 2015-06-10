@@ -1011,6 +1011,14 @@ user agent stylesheetdiv {
 }
 .ak-item-list .ak-item-elt .ak-item-elt-content, .ak-item-list .ak-item-elt-tiny .ak-item-elt-content, .ak-item-list .ak-item-elt .ak-item-elt-content:hover, .ak-item-list .ak-item-elt-tiny .ak-item-elt-content:hover {
     background: #f3f2ed;
+    border-radius: 5px;
+  border: 1px solid #5F5E5E;
+  -moz-box-shadow: 0px 0px 7px 0px #656565;
+  -webkit-box-shadow: 0px 0px 7px 0px #656565;
+  -o-box-shadow: 0px 0px 7px 0px #656565;
+  box-shadow: 0px 0px 5px 0px #656565;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=7);
+
 }
 .ak-item-list .ak-item-elt-content {
     background: #f3f2ed;

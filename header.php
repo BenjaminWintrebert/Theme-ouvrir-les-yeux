@@ -56,7 +56,7 @@
 
                         </div>
                         <div id="accessibilite" class="col-md-3">
-                            BARRE ACCESSIBILITE
+
                         </div>
 
                     </div>

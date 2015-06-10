@@ -6,6 +6,8 @@ aleatpar(5,"publiques");
 aleatpar(7,"artistes");
 aleatpar(4,"sportifs");
 
+
+
 function aleatpar($n,$p){//$n = nb partenaire, $p = dossier partenaire
 ?>
 <div class="row ">
@@ -24,7 +26,7 @@ function aleatpar($n,$p){//$n = nb partenaire, $p = dossier partenaire
         <div class="col-md-12">
             <div class="row">
                 <?php
-                         $NbDispo = range(1, $n); // tableau de toutes les valeurs possibles
+                         $NbDispo = range(1, $n+1); // tableau de toutes les valeurs possibles
                          $NbTires = array_rand($NbDispo, 4);
                 ?>
                 <div class="col-xs-4">
