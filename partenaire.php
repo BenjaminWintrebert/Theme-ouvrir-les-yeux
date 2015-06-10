@@ -9,7 +9,12 @@ aleatpar(4,"sportifs");
 function aleatpar($n,$p){//$n = nb partenaire, $p = dossier partenaire
 ?>
 <div class="row">
-    <div class="col-md-12"><h1><?php echo $p; ?></h1></div>
+    <?php if($p=="prives"||$p=="publiques"){
+        ?> <div class="col-md-12"><h1>Des structures <?php echo $p; ?></h1></div>  <?php
+}
+                         else{
+                             ?>
+    <div class="col-md-12"><h1>Des <?php echo $p; ?></h1></div><?php } ?>
     <div class="row">
         <div class="col-md-12">
             <div class="row">
