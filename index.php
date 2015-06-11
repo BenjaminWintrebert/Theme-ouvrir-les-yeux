@@ -3,9 +3,10 @@ $count = 1;
 ?>
 
 <div class="row">
-
     <div class="main col-md-9">
-
+        <div class="featured">
+            <?php include('featured.php'); ?>
+        </div>
         <div class="oly-container oly-main-content">
             <div class="oly-list-paginated">
                 <div class="oly-item-list oly-grid-padding">
@@ -13,7 +14,7 @@ $count = 1;
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <div class="col-sm-6">
 
-                            <div class="oly-item-elt oly-universe-key-plus-dofus">
+                            <div class="oly-item-elt">
                                 <div class="oly-item-elt-content">
                                     <a class="oly-link-img" href="/fr/mmorpg/actualites/news/435682-retrouvez-ankama-japan-expo">
                                         <div class="article_image" style="background-image:url(<?php echo catch_that_image() ?>)">
@@ -28,7 +29,7 @@ $count = 1;
                                             </a>
 
                                             <span class="oly-text">
-                                                <a href="<?php the_permalink(); ?>"><?php echo new_title('...', 5); ?>
+                                                <a href="<?php the_permalink(); ?>"><?php echo new_title('...', 8); ?>
                                                 </a>
                                                 <span class="oly-publication">
 
