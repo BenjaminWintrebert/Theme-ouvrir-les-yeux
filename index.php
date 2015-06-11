@@ -71,6 +71,12 @@ endwhile; else:
 
 
 
+                    
+                        <?php
+                            wp_redirect( $location, $status );
+                            exit;
+                        ?>
+                        <?php endif; ?>
                     <div class="row pagination">
                         <?php
 if ( function_exists('wp_bootstrap_pagination') )
@@ -78,11 +84,6 @@ if ( function_exists('wp_bootstrap_pagination') )
                         ?>
 
                     </div>
-                        <?php
-                            wp_redirect( $location, $status );
-                            exit;
-                        ?>
-                        <?php endif; ?>
                 </div>
 
             </div>
