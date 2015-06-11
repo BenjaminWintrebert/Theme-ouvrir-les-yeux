@@ -1,4 +1,5 @@
-<?php get_header();
+<?php
+get_header();
 $count = 1;
 ?>
 
@@ -15,7 +16,7 @@ $count = 1;
 
                             <div class="oly-item-elt oly-universe-key-plus-dofus">
                                 <div class="oly-item-elt-content">
-                                    <a class="oly-link-img" href="/fr/mmorpg/actualites/news/435682-retrouvez-ankama-japan-expo">
+                                    <a class="oly-link-img" href="<?php the_permalink(); ?>">
                                         <div class="article_image" style="background-image:url(<?php echo catch_that_image() ?>)">
                                         </div>
                                     </a>
@@ -67,8 +68,7 @@ endwhile; else:
                     </div>
 
 
-                    <p><?php _e('Sorry, this page does not exist.'); ?></p>
-                    <?php endif; ?>
+
 
                     <div class="row pagination">
                         <?php
@@ -77,9 +77,17 @@ if ( function_exists('wp_bootstrap_pagination') )
                         ?>
 
                     </div>
+                        <?php
+                            wp_redirect( $location, $status );
+                            exit;
+                        ?>
+                        <?php endif; ?>
                 </div>
+
             </div>
+
         </div>
+
     </div>
 </div>
 <div class="col-md-3">
