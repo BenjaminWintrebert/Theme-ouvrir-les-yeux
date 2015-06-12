@@ -243,4 +243,5 @@ function wp_bootstrap_pagination( $args = array() ) {
     if ( isset($echo) )
         echo $args['before_output'] . $echo . $args['after_output'];
 }
+
 ?>
