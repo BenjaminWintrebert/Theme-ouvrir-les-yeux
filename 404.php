@@ -1,26 +1,30 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+
+        <title>OLY | Page 404</title>
 
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="error-template">
-            <h1>
-                Oups!</h1>
-            <h2>
-                Erreur 404</h2>
-            <div class="error-details">
-                Désolé, une erreur a été détecté. La page que vous souhaitez n'existe plus...
+        <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="page404">
+        <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/supercorn.gif"/>
+            <div id="text">
+                <h1>Page <span>404</span></h1>
+                <p>Vous êtes perdu ? <a href="http://localhost/wordpress/index.php/">Monter sur notre licorne et retourner à l'accueil !</a></p>
             </div>
-            <div class="error-actions">
-                <a href="<?php echo site_url(); ?>" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
-                    Retour à l'accueil </a><a href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
-            </div>
+
         </div>
-    </div>
-</div>
 
-
-
-<?php get_footer(); ?>
-
+    </body>
+</html>
 

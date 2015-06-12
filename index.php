@@ -1,6 +1,10 @@
 <?php
 get_header();
 $count = 1;
+$args = array(
+	'ignore_sticky_posts' => 1
+);
+$query = new WP_Query( $args );
 ?>
 
 <div class="row">
@@ -12,7 +16,8 @@ $count = 1;
             <div class="oly-list-paginated">
                 <div class="oly-item-list oly-grid-padding">
                     <div class="row">
-                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <?php
+if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
                         <div class="col-sm-6">
 
                             <div class="oly-item-elt">
@@ -64,6 +69,7 @@ $count = 1;
 
                     <div class="row">
                         <?php } $count ++;
+
 endwhile; else:
                         ?>
                     </div>
@@ -76,6 +82,7 @@ endwhile; else:
                             wp_redirect( $location, $status );
                             exit;
                         ?>
+
                         <?php endif; ?>
                     <div class="row pagination">
                         <?php
