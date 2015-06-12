@@ -971,6 +971,11 @@ user agent stylesheetdiv {
 }
 .oly-grid-padding {
     padding: 12px;
+    padding-top:0px;
+}
+.oly-grid-padding-featured {
+    padding: 12px;
+    padding-bottom:0px;
 }
 .row {
     margin-left: -6px;
@@ -1014,7 +1019,7 @@ user agent stylesheetdiv {
     margin-top: 1.2rem;
     transition: all 0.1s;
 }
-.oly-item-list .oly-item-elt .oly-link-img, .oly-item-list .oly-item-elt .oly-widget-video {
+.oly-item-list .oly-item-elt .oly-link-img {
     border-bottom-color: #e02126;
 }
 .oly-item-list .oly-link-img, .oly-item-list .oly-widget-video {
