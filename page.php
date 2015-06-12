@@ -3,14 +3,15 @@
 
 <div class="row first">
     <div class="col-md-9">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <h1><?php the_title(); ?></h1>
-        <?php the_content(); ?>
+        <div class="container_page">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <h1><?php the_title(); ?></h1>
+            <?php the_content(); ?>
 
-        <?php endwhile; else: ?>
-        <p><?php _e("Désolé, cette page n'existe pas."); ?></p>
-        <?php endif; ?>
-
+            <?php endwhile; else: ?>
+            <p><?php _e("Désolé, cette page n'existe pas."); ?></p>
+            <?php endif; ?>
+        </div>
     </div>
     <div class="col-md-3">
         <?php get_sidebar(); ?>

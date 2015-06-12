@@ -52,7 +52,7 @@ a:hover, a:focus {
 input:focus{
     outline-style:none!important;
     box-shadow:none!important;
-    border-color:#e02126!important;
+    border-color:#df2026!important;
 }
 
 body{
@@ -1317,4 +1317,14 @@ svg:not(:root) {
 #text{
     margin-top: 550px;
     z-index: 10;
+}
+
+.container_page{
+    margin:10px;
+    -moz-box-shadow: 0px 0px 5px 1px #656565;
+    -webkit-box-shadow: 0px 0px 5px 1px #656565;
+    -o-box-shadow: 0px 0px 5px 1px #656565;
+    box-shadow: 0px 0px 5px 1px #656565;
+    padding:5px;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);
 }
