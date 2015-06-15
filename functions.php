@@ -244,4 +244,33 @@ function wp_bootstrap_pagination( $args = array() ) {
         echo $args['before_output'] . $echo . $args['after_output'];
 }
 
+add_action('init', function() {
+    // yes, this is a PHP 5.3 closure, deal with it
+    if (isset($_GET['color'])) {
+        $i=$_GET['color'];
+        setcookie("color", time()-41556926);
+        if($i=="rouge"){
+            setcookie("color", "rouge", time()+31556926);  /* expire dans 1 an */
+        }
+        elseif($i=="bleu"){
+            setcookie("color", "bleu", time()+31556926);
+        }
+        elseif($i=="jaune"){
+            setcookie("color", "jaune", time()+31556926);
+        }
+        elseif($i=="noir"){
+            setcookie("color", "noir", time()+31556926);
+        }
+        elseif($i=="blanc"){
+            setcookie("color", "blanc", time()+31556926);
+        }
+        else{
+            setcookie("color", " ", time()+31556926);
+        }
+    }
+    else{
+
+    }
+});
+
 ?>
