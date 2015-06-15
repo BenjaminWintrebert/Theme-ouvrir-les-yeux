@@ -1,10 +1,13 @@
 <?php
 get_header();
 $count = 1;
+<<<<<<< HEAD
 $args = array(
     'ignore_sticky_posts' => 1
 );
 $query = new WP_Query( $args );
+=======
+>>>>>>> 4f3583013af82e0b68cfe80634cf077980f84061
 ?>
 
 <div class="row">
@@ -16,8 +19,8 @@ $query = new WP_Query( $args );
             <div class="oly-list-paginated">
                 <div class="oly-item-list oly-grid-padding">
                     <div class="row">
-                        <?php
-if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+<?php
+if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <div class="col-sm-6">
 
                             <div class="oly-item-elt">
