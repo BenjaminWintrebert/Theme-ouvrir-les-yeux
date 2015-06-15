@@ -1,13 +1,11 @@
 <?php
 get_header();
 $count = 1;
-<<<<<<< HEAD
 $args = array(
     'ignore_sticky_posts' => 1
 );
 $query = new WP_Query( $args );
-=======
->>>>>>> 4f3583013af82e0b68cfe80634cf077980f84061
+
 ?>
 
 <div class="row">
