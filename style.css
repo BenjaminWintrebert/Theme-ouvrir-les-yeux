@@ -1351,3 +1351,42 @@ svg:not(:root) {
     padding:5px;
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);
 }
+
+#bleu *{
+    color:yellow!important;
+    background: blue!important;
+    border-color:yellow!important;
+}
+
+#rouge *{
+    color:white!important;
+    background-color:red!important;
+    border-color:white!important;
+}
+
+#blanc *{
+    color:black!important;
+    background-color:white!important;
+    border-color:black!important;
+}
+
+#jaune *{
+    color:black!important;
+    background-color:yellow!important;
+    border-color:black!important;
+}
+
+#noir *{
+    color:white!important;
+    background-color:black!important;
+    border-color:white!important;
+}
+
+#rouge a:hover, #bleu a:hover, #blanc a:hover, #jaune a:hover, #noir a:hover{
+    text-decoration: underline!important;
+}
+
+#bleu .oly-ellipsis-text, #rouge .oly-ellipsis-text, #blanc .oly-ellipsis-text, #jaune .oly-ellipsis-text, #noir .oly-ellipsis-text{
+    display: none;
+}
+
