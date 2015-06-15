@@ -2,7 +2,7 @@
 get_header();
 $count = 1;
 $args = array(
-	'ignore_sticky_posts' => 1
+    'ignore_sticky_posts' => 1
 );
 $query = new WP_Query( $args );
 ?>
@@ -77,13 +77,13 @@ endwhile; else:
 
 
 
-                    
-                        <?php
-                            wp_redirect( $location, $status );
-                            exit;
-                        ?>
 
-                        <?php endif; ?>
+                    <?php
+wp_redirect( $location, $status );
+exit;
+                    ?>
+
+                    <?php endif; ?>
                     <div class="row pagination">
                         <?php
 if ( function_exists('wp_bootstrap_pagination') )
