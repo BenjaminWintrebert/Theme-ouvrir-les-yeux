@@ -8,7 +8,6 @@
             <h1><?php the_title(); ?></h1>
             <p class="post-info"> Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>. </p>
             <div class="post-content"> <?php the_content(); ?> </div>
-            <div class="post-comments"> <?php comments_template(); ?> </div>
             <?php endwhile; else: ?>
             <p><?php _e("Désolé, cette page n'existe pas."); ?></p>
             <?php endif; ?>
