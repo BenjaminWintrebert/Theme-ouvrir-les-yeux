@@ -6,7 +6,7 @@ jQuery(document).ready(function(){
             $(this).find('.show').toggleClass('glyphicon-plus glyphicon-minus');
         });
     };
-    
+
     if ($( window ).width()>768){
         $(".dropdown").on("click",function(){
             $(this).toggleClass('open');
@@ -27,8 +27,15 @@ jQuery(document).ready(function(){
     $( window ).resize(function() {
         $('.no-dropdown').css('height',$('.dropdown').height());
     });
-
+    $('.dropdown').on("click", function(){
+        $(this).parent().find('ul').first().toggleClass('open');
+        $(this).find('b').toggleClass('caret-inverse');
+    });
 });
+
+
+
+
 
 
 

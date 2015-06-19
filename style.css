@@ -255,6 +255,7 @@ button:focus {outline:0 !important;}
         display: block;
     }
 
+
     #menu ul{
         border:none;
     }
@@ -339,7 +340,6 @@ button:focus {outline:0 !important;}
     #menu ul ul{
         position:absolute;
         left:0;
-        top:50px;
         z-index:99999;
         display:none;
         float:left;
@@ -1396,4 +1396,27 @@ svg:not(:root) {
     margin-top:7px;
     padding: 0;
     float: right;
+}
+
+.caret-inverse {
+    display: inline-block!important;
+    width: 0!important;
+    height: 0!important;
+    margin-left: 2px!important;
+    vertical-align: middle!important;
+    border-top: 4px dashed!important;
+    border-top: 4px solid\9!important;
+    border-right: 4px solid transparent!important;
+    border-left: 4px solid transparent!important;
+    color: white!important;
+}
+.caret-inverse {
+    content: ""!important;
+    border-top: 0!important;
+    border-bottom: 4px dashed!important;
+    border-bottom: 4px solid\9!important;
+}
+
+.open{
+    display:block!important;
 }
