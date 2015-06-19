@@ -1417,6 +1417,7 @@ svg:not(:root) {
     border-bottom: 4px solid\9!important;
 }
 
-.open{
-    display:block!important;
+.active{
+   background: #2b425c!important;
 }
+
