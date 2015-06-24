@@ -38,6 +38,10 @@ jQuery(document).ready(function(){
     $('html').click(function(e){
         $('.dropdown-menu').slideUp();
         $(this).parent().find('a').removeClass('active');
+        $('.caret-inverse').each(function(){
+            $(this).addClass('caret');
+            $(this).removeClass('caret-inverse');
+        });
     });
 
     $('.dropdown').click(function(e) {
@@ -53,6 +57,8 @@ jQuery(document).ready(function(){
             $(this).parent().find('a').addClass('active');
             $(this).parent().find('ul').first().slideToggle();
         }
+//        else if($(this).parents("ul").attr('id') === undefined){
+//        }
         else{
             $(this).parent().find('a').addClass('active');
             $(this).parent().find('ul').first().slideToggle();
