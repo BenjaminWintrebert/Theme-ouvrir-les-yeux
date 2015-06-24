@@ -33,11 +33,11 @@ jQuery(document).ready(function(){
         $(this).find('b').toggleClass('caret-inverse');
     });
 
-
+$('.menu-header > ul:first > li > div').addClass('coucou');
 
 $('html').click(function(e){
             $('.dropdown-menu').slideUp();
-        $(this).parent().find('a').removeClass('active');
+        $(this).parent().find('a').removeClass('active');   
         });
 
   $('.dropdown').click(function(e) {
@@ -45,6 +45,10 @@ $('html').click(function(e){
     $(this).parent().find('ul').first().slideToggle();
     e.stopPropagation();
   });
+    
+    $('.coucou').click(function(e) {
+        $('.dropdown-menu').slideUp();
+    });
 
 });
 
