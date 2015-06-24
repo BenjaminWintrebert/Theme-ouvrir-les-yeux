@@ -37,11 +37,11 @@ else{
             <div class="row">
                 <div class="col-md-12">
                     <div class="row" id="pre-nav">
-                        <div id="don-soutien" class="col-md-3">
+                        <div id="don-soutien" class="col-md-3 col-xs-6">
                             <a href=#><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don.png" alt="Bouton des dons"/>DON</a>
                             <a href=#><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien.png"  alt="Bouton des soutiens"/>SOUTIEN</a>
                         </div>
-                        <div id="mediatheque" class="col-md-3">
+                        <div id="mediatheque" class="col-md-3 col-xs-6">
                             <a href=#><span class="flaticon-computerscreen11"></span></a>
                             <a href=#><span class="flaticon-picture64"></span></a>
                             <a href=#><span class="flaticon-news2"></span></a>

@@ -190,9 +190,7 @@ button:focus {outline:0 !important;}
         width: 50%;
         display: inline;
     }
-    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 4em!important;
-    }
+
 }
 
 @media screen and (max-width:550px){
@@ -220,9 +218,6 @@ button:focus {outline:0 !important;}
     }
     #don-soutien a {
         margin-right: 10px!important;
-    }
-    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 3.5em!important;
     }
 }
 
@@ -719,6 +714,7 @@ button:focus {outline:0 !important;}
     font-size:1.4em;
     color:#e02126;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .round{
@@ -1111,6 +1107,11 @@ user agent stylesheetdiv {
 .oly-item-list .oly-item-elt-title a:hover {
     color: #e02126;
 }
+
+.oly-text:hover article_image{
+    opacity: 0.8;
+}
+
 .oly-item-list .oly-item-elt-title {
     background: #ffffff;
 }

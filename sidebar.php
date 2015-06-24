@@ -12,15 +12,15 @@
         <div class="row newsletter">
             <div class="col-md-12">
                 <?php
-//if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ;
-$widgetNL = new WYSIJA_NL_Widget(true);
-echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php'));
+                    //if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ;
+                    $widgetNL = new WYSIJA_NL_Widget(true);
+                    echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php'));
                 ?>
             </div>
         </div>
         <div class="row hidden-xs hidden-sm">
             <div class="col-md-6">
-                <a href="#"><div class="bouton_sidebar">
+                <a href="http://www.ouvrirlesyeux.org/le-soutien/dons/"><div class="bouton_sidebar">
                     <div class="row">
                         <div class="col-md-6">
                             <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don_b.png" class="btn-ds"/>
@@ -32,7 +32,7 @@ echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php'));
                     </div></a>
             </div>
             <div class="col-md-6">
-                <a href="#"><div class="bouton_sidebar">
+                <a href="http://www.ouvrirlesyeux.org/le-soutien/"><div class="bouton_sidebar">
                     <div class="row">
                         <div class="col-md-6">
                             <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien_b.png" class="btn-ds"/>
@@ -53,19 +53,19 @@ echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php'));
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="bouton_sidebar_ fb">
-                    <i class="flaticon-logotype42"></i>
-                </div>
+                <a href="https://www.facebook.com/pages/Association-Ouvrir-Les-Yeux/174805525994585"><div class="bouton_sidebar_ fb">
+                    <i class="flaticon-logotype42" style="margin-left:10px!important;"></i>
+                    </div></a>
             </div>
-            <div class="col-md-4">
+            <a href="https://twitter.com/Ouvrir_Les_Yeux"><div class="col-md-4">
                 <div class="bouton_sidebar_ tw">
-                    <i class="flaticon-twitter1"></i>
+                    <i class="flaticon-twitter1" style="margin-left:10px!important;"></i>
                 </div>
-            </div>
+            </div></a>
             <div class="col-md-4">
-                <div class="bouton_sidebar_ rss">
-                    <i class="flaticon-web42"></i>
-                </div>
+                <a href="<?php echo site_url(); ?>/feed"><div class="bouton_sidebar_ rss">
+                    <i class="flaticon-web42" style="margin-left:10px!important;"></i>
+            </div></a>
             </div>
         </div>
         <div class="row partenaire">
