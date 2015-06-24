@@ -2,7 +2,7 @@
 Theme Name: OuvrirLesYeux
 Description: Thème OLY
 Author: BaBe
-Version: 0.0.2
+Version: 0.0.3
 */
 
 
@@ -190,9 +190,7 @@ button:focus {outline:0 !important;}
         width: 50%;
         display: inline;
     }
-    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 4em!important;
-    }
+
 }
 
 @media screen and (max-width:550px){
@@ -220,9 +218,6 @@ button:focus {outline:0 !important;}
     }
     #don-soutien a {
         margin-right: 10px!important;
-    }
-    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 3.5em!important;
     }
 }
 
@@ -719,6 +714,7 @@ button:focus {outline:0 !important;}
     font-size:1.4em;
     color:#e02126;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .round{
@@ -783,21 +779,14 @@ button:focus {outline:0 !important;}
 }
 
 .wysija-paragraph{
-    width:50%;
-    display: table-cell;
-    padding: 5px;
+    width:100%;
 }
 
 .wysija-paragraph{
-    width:50%;
-    display: table-cell;
     padding: 0px;
     padding-bottom: 5px;
-    padding-right: 5px;
-}
-
-.wysija-paragraph:nth-child(2){
-    padding-right: 0;
+    padding-right: 0px;
+    margin-bottom: 5px;
 }
 
 /* Newsletter */
@@ -1111,6 +1100,11 @@ user agent stylesheetdiv {
 .oly-item-list .oly-item-elt-title a:hover {
     color: #e02126;
 }
+
+.oly-text:hover article_image{
+    opacity: 0.8;
+}
+
 .oly-item-list .oly-item-elt-title {
     background: #ffffff;
 }
