@@ -46,9 +46,13 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="bouton_sidebar_">
-
-                </div>
+                <a href="<?php echo site_url(); ?>/contact"><div class="bouton_sidebar_">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="line-height:50px;width:100%;"><i class="flaticon flaticon-telephone5"></i> <span style="font-size:20px;">Contact</span></p>
+                        </div>
+                    </div>
+                    </div></a>
             </div>
         </div>
         <div class="row">

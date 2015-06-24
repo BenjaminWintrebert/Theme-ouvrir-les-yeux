@@ -779,21 +779,14 @@ button:focus {outline:0 !important;}
 }
 
 .wysija-paragraph{
-    width:50%;
-    display: table-cell;
-    padding: 5px;
+    width:100%;
 }
 
 .wysija-paragraph{
-    width:50%;
-    display: table-cell;
     padding: 0px;
     padding-bottom: 5px;
-    padding-right: 5px;
-}
-
-.wysija-paragraph:nth-child(2){
-    padding-right: 0;
+    padding-right: 0px;
+    margin-bottom: 5px;
 }
 
 /* Newsletter */
