@@ -33,8 +33,6 @@ jQuery(document).ready(function(){
         $(this).find('b').toggleClass('caret-inverse');
     });
 
-
-
     $('html').click(function(e){
         $('.dropdown-menu').slideUp();
         $(this).parent().find('a').removeClass('active');
@@ -43,7 +41,6 @@ jQuery(document).ready(function(){
             $(this).removeClass('caret-inverse');
         });
     });
-
     $('.dropdown').click(function(e) {
         if(($(this).parents("ul").attr('id')=="menu-primary")){
             if($(this).parents("li").find("a").attr('class')=="dropdown-toggle active"){

@@ -49,7 +49,7 @@
                 <a href="<?php echo site_url(); ?>/contact"><div class="bouton_sidebar_">
                     <div class="row">
                         <div class="col-md-12">
-                            <p style="line-height:50px;width:100%;"><i class="flaticon flaticon-telephone5"></i> <span style="font-size:20px;">Contact</span></p>
+                            <p class='bloc-contact'><i class="flaticon flaticon-telephone5"></i> <span class='contact'>Contact</span></p>
                         </div>
                     </div>
                     </div></a>
@@ -58,17 +58,17 @@
         <div class="row">
             <div class="col-md-4">
                 <a href="https://www.facebook.com/pages/Association-Ouvrir-Les-Yeux/174805525994585"><div class="bouton_sidebar_ fb">
-                    <i class="flaticon-logotype42" style="margin-left:10px!important;"></i>
+                    <i class="flaticon-logotype42 btn-social"></i>
                     </div></a>
             </div>
             <a href="https://twitter.com/Ouvrir_Les_Yeux"><div class="col-md-4">
                 <div class="bouton_sidebar_ tw">
-                    <i class="flaticon-twitter1" style="margin-left:10px!important;"></i>
+                    <i class="flaticon-twitter1 btn-social"></i>
                 </div>
             </div></a>
             <div class="col-md-4">
                 <a href="<?php echo site_url(); ?>/feed"><div class="bouton_sidebar_ rss">
-                    <i class="flaticon-web42" style="margin-left:10px!important;"></i>
+                    <i class="flaticon-web42 btn-social"></i>
             </div></a>
             </div>
         </div>
