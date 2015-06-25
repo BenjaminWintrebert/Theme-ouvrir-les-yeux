@@ -42,17 +42,17 @@ else{
                             <a href="http://www.ouvrirlesyeux.org/le-soutien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien.png"  alt="Bouton des soutiens"/>SOUTIEN</a>
                         </div>
                         <div id="mediatheque" class="col-md-3 col-xs-6">
-                            <a href=#><span class="flaticon-computerscreen11"></span></a>
-                            <a href=#><span class="flaticon-picture64"></span></a>
-                            <a href=#><span class="flaticon-news2"></span></a>
-                            <a href=#><span class="flaticon-headphone4"></span></a>
+                            <a href=# title="Bouton : Visionner des contenus"><span class="flaticon-computerscreen11"></span></a>
+                            <a href=# title="Bouton : Voir des contenus"><span class="flaticon-picture64"></span></a>
+                            <a href=# title="Bouton : Lire des contenus"><span class="flaticon-news2"></span></a>
+                            <a href=# title="Bouton : Écouter des contenus"><span class="flaticon-headphone4"></span></a>
                         </div>
                         <div id="recherche" class="col-md-3">
 
                             <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
                                 <div class="input-group custom-search-form">
                                     <span class="input-group-btn">
-                                        <button type="submit" class="btn btn-default" type="button">
+                                        <button title="Bouton de recherche" type="submit" class="btn btn-default" type="button">
                                             <span class="glyphicon glyphicon-search"></span>
                                         </button>
                                     </span>
@@ -62,12 +62,12 @@ else{
 
                         </div>
                         <div id="accessibilite" class="col-md-3">
-                            <a href="<?php bloginfo('home');?>?color=jaune" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/jaune.png" alt ="noir sur jaune" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=blanc" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/blanc.png" alt ="noir sur blanc" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=bleu" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/bleu.png" alt ="jaune sur bleu" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=noir" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/noir.png" alt ="blanc sur noir" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=rouge" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/rouge.png" alt ="blanc sur rouge" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=reset" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/reset.png" alt ="réinitialiser les couleurs" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=jaune" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/jaune.png" alt ="Bouton des contrastes : noir sur jaune" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=blanc" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/blanc.png" alt ="Bouton des contrastes : noir sur blanc" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=bleu" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/bleu.png" alt ="Bouton des contrastes : jaune sur bleu" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=noir" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/noir.png" alt ="Bouton des contrastes : blanc sur noir" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=rouge" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/rouge.png" alt ="Bouton des contrastes : blanc sur rouge" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=reset" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/reset.png" alt ="Bouton pour réinitialiser les contrastes" class="access_img"/></a>
                         </div>
 
                     </div>
