@@ -1452,3 +1452,7 @@ svg:not(:root) {
     background: #2b425c!important;
 }
 
+iframe{
+    width: 100%!important;
+}
+
