@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <?php
-$color="null";
 if(isset($_GET['color'])){
     $color=$_GET['color']; 
 }
 else{
-    $color=$_COOKIE['color']; 
-}?>
+    $color=$_COOKIE['color'];}
+if($color==" "){
+    $color="no";
+}
+?>
 <html lang="fr" id="<?php echo $color; ?>">
     <head>
         <meta charset="utf-8">
@@ -14,7 +16,6 @@ else{
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
-        <META HTTP-EQUIV="Content-Language" CONTENT="fr">
         <meta name="author" content="Ouvrir Les Yeux">
         <link rel="icon" href="../../favicon.ico">
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
@@ -25,7 +26,6 @@ else{
         <?php wp_enqueue_script("wpbootstrap_scripts_with_jquery"); ?>
         <?php wp_head(); ?>
     </head>
-
     <body>
         <div class="container">
             <div class="row">
