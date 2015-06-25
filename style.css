@@ -557,13 +557,13 @@ button:focus {outline:0 !important;}
 /******************************/
 .article_image{
     width: 100%;
-    height:150px;
+    height:200px;
     background: no-repeat;
     background-size: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     filter: blur(2px);
-    background-position:top;
+    background-position:center;
 }
 
 .article_image:hover{
@@ -697,7 +697,7 @@ button:focus {outline:0 !important;}
 }
 
 .pager li > a:hover,.pager li .active, .pager li > span {
-    background-color: #e02126;
+    background-color: #e02126!important;
     color:white;
 }
 
@@ -811,16 +811,36 @@ button:focus {outline:0 !important;}
     border-radius:3px;
 }
 
+.wysija-submit:hover {
+    background-color:#2b425c;
+}
+
+.bouton_sidebar:hover{
+    background-color:#e02126;
+}
+
 .fb{
-    background-color: #3B5998;
+    background-color: rgb(59, 88, 151);
+}
+
+.fb:hover{
+ background-color:rgb(43, 66, 118)!important;
 }
 
 .tw{
     background-color: #4099FF;
 }
 
+.tw:hover{
+    background-color: rgb(56, 127, 208)!important;
+}
+
 .rss{
     background-color: #FF6600;
+}
+
+.rss:hover{
+    background-color: #d05402!important;
 }
 
 .partenaire{
@@ -835,6 +855,23 @@ button:focus {outline:0 !important;}
     margin-left:-5px;
     margin-right: -5px;
     font-size:15px;
+}
+
+.bloc-contact{
+    margin:0 !important;
+}
+
+.contact{
+    font-size:20px;
+    vertical-align: middle;
+}
+
+.btn-social::before{
+    margin:0 !important;
+}
+
+.bouton_sidebar_:hover{
+    background: #2b425c;
 }
 /************FIN_SIDEBAR*************/
 
@@ -1412,6 +1449,6 @@ svg:not(:root) {
 }
 
 .active{
-   background: #2b425c!important;
+    background: #2b425c!important;
 }
 
