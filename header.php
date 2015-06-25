@@ -11,11 +11,11 @@ else{
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
+        <meta name="description" content="Ouvrir Les Yeux soutient les personnes atteintes de Neuropathies Optiques Héréditaires et leurs proches, et finance la Recherche">
         <meta name="author" content="BaBe">
         <link rel="icon" href="../../favicon.ico">
         <meta http-equiv="cache-control" content="no-cache" />
-        <title>OLY | Site de l'association Ouvrir Les Yeux</title>
+        <title>Site de l’association Ouvrir Les Yeux</title>
 
 
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
