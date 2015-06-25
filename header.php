@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<?php if(isset($_GET['color'])){
+<?php
+$color="null";
+if(isset($_GET['color'])){
     $color=$_GET['color']; 
 }
 else{
@@ -12,12 +14,9 @@ else{
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
-        <meta name="author" content="BaBe">
+        <META HTTP-EQUIV="Content-Language" CONTENT="fr">
+        <meta name="author" content="Ouvrir Les Yeux">
         <link rel="icon" href="../../favicon.ico">
-        <meta http-equiv="cache-control" content="no-cache" />
-        <title>OLY | Site de l'association Ouvrir Les Yeux</title>
-
-
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -52,7 +51,7 @@ else{
                             <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
                                 <div class="input-group custom-search-form">
                                     <span class="input-group-btn">
-                                        <button type="submit" class="btn btn-default" type="button">
+                                        <button type="submit" class="btn btn-default">
                                             <span class="glyphicon glyphicon-search"></span>
                                         </button>
                                     </span>

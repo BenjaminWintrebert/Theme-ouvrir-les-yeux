@@ -824,7 +824,7 @@ button:focus {outline:0 !important;}
 }
 
 .fb:hover{
- background-color:rgb(43, 66, 118)!important;
+    background-color:rgb(43, 66, 118)!important;
 }
 
 .tw{
@@ -1456,3 +1456,23 @@ iframe{
     width: 100%!important;
 }
 
+.container_page h1{
+    font-size: 35px;
+    font-family: 'bebas_neueregular';
+    color:#2b425c;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.post-info{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container_page hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 4px solid #e02126;
+}

@@ -42,7 +42,7 @@ if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
 
-                                                    <div class="glyphicon glyphicon-time"></div> <?php echo get_the_date();?> à <?php echo get_the_time(); ?>                      </span>
+                                                    <span class="glyphicon glyphicon-time"></span> <?php echo get_the_date();?> à <?php echo get_the_time(); ?>                      </span>
                                             </span>
                                         </div>
                                         <div class="oly-item-elt-desc">
