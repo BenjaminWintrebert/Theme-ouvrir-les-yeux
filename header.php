@@ -15,9 +15,11 @@ if($color==" "){
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="Ouvrir Les Yeux">
+        <meta name="description" content="Ouvrir Les Yeux soutient les personnes atteintes de Neuropathies Optiques Héréditaires et leurs proches, et finance la Recherche">
+        <meta name="author" content="BaBe">
         <link rel="icon" href="../../favicon.ico">
+        <meta http-equiv="cache-control" content="no-cache" />
+        <title>Site de l’association Ouvrir Les Yeux</title>
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -41,10 +43,10 @@ if($color==" "){
                             <a href="http://www.ouvrirlesyeux.org/le-soutien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien.png"  alt="Bouton des soutiens"/>SOUTIEN</a>
                         </div>
                         <div id="mediatheque" class="col-md-3 col-xs-6">
-                            <a href=#><span class="flaticon-computerscreen11"></span></a>
-                            <a href=#><span class="flaticon-picture64"></span></a>
-                            <a href=#><span class="flaticon-news2"></span></a>
-                            <a href=#><span class="flaticon-headphone4"></span></a>
+                            <a href=# title="Bouton : Visionner des contenus"><span class="flaticon-computerscreen11"></span></a>
+                            <a href=# title="Bouton : Voir des contenus"><span class="flaticon-picture64"></span></a>
+                            <a href=# title="Bouton : Lire des contenus"><span class="flaticon-news2"></span></a>
+                            <a href=# title="Bouton : Écouter des contenus"><span class="flaticon-headphone4"></span></a>
                         </div>
                         <div id="recherche" class="col-md-3">
 
@@ -61,12 +63,12 @@ if($color==" "){
 
                         </div>
                         <div id="accessibilite" class="col-md-3">
-                            <a href="<?php bloginfo('home');?>?color=jaune" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/jaune.png" alt ="noir sur jaune" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=blanc" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/blanc.png" alt ="noir sur blanc" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=bleu" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/bleu.png" alt ="jaune sur bleu" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=noir" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/noir.png" alt ="blanc sur noir" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=rouge" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/rouge.png" alt ="blanc sur rouge" class="access_img"/></a>
-                            <a href="<?php bloginfo('home');?>?color=reset" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/reset.png" alt ="réinitialiser les couleurs" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=jaune" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/jaune.png" alt ="Bouton des contrastes : noir sur jaune" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=blanc" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/blanc.png" alt ="Bouton des contrastes : noir sur blanc" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=bleu" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/bleu.png" alt ="Bouton des contrastes : jaune sur bleu" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=noir" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/noir.png" alt ="Bouton des contrastes : blanc sur noir" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=rouge" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/rouge.png" alt ="Bouton des contrastes : blanc sur rouge" class="access_img"/></a>
+                            <a href="<?php bloginfo('home');?>?color=reset" class="access_lien"><img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/access/reset.png" alt ="Bouton pour réinitialiser les contrastes" class="access_img"/></a>
                         </div>
 
                     </div>
