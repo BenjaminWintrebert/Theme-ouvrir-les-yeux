@@ -45,20 +45,28 @@ jQuery(document).ready(function(){
     });
 
     $('.dropdown').click(function(e) {
-        if($(this).parents("ul").attr('id')=="menu-primary"){
-            $('.dropdown-menu').slideUp();
-            $(this).parent().find('active').removeClass('active');
-            $('.caret-inverse').each(function(){
-                $(this).addClass('caret');
-                $(this).removeClass('caret-inverse');
-            });
-            $(this).find('b').removeClass('caret');
-            $(this).find('b').addClass('caret-inverse');
-            $(this).parent().find('a').addClass('active');
-            $(this).parent().find('ul').first().slideToggle();
+        if(($(this).parents("ul").attr('id')=="menu-primary")){
+            if($(this).parents("li").find("a").attr('class')=="dropdown-toggle active"){
+                $('.dropdown-menu').slideUp();
+                $(this).parents("li").find("b").addClass("caret");
+                $(this).parents("li").find('.active').removeClass('active');
+            }
+            else{
+                $('.dropdown-menu').slideUp();
+                $('.active').each(function(){
+                    $(this).removeClass('active');
+                });
+                $('.caret-inverse').each(function(){
+                    $(this).addClass('caret');
+                    $(this).removeClass('caret-inverse');
+                });
+                $(this).find('b').removeClass('caret');
+                $(this).find('b').addClass('caret-inverse');
+                $(this).parent().find('a').addClass('active');
+                $(this).parent().find('ul').first().slideToggle();7}
         }
-//        else if($(this).parents("ul").attr('id') === undefined){
-//        }
+        //        else if($(this).parents("ul").attr('id') === undefined){
+        //        }
         else{
             $(this).parent().find('a').addClass('active');
             $(this).parent().find('ul').first().slideToggle();
