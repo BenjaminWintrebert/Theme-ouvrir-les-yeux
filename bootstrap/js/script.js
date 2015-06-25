@@ -33,21 +33,35 @@ jQuery(document).ready(function(){
         $(this).find('b').toggleClass('caret-inverse');
     });
 
-$('.menu-header > ul:first > li > div').addClass('coucou');
-
-$('html').click(function(e){
-            $('.dropdown-menu').slideUp();
-        $(this).parent().find('a').removeClass('active');   
-        });
-
-  $('.dropdown').click(function(e) {
-      $(this).parent().find('a').addClass('active');
-    $(this).parent().find('ul').first().slideToggle();
-    e.stopPropagation();
-  });
-    
-    $('.coucou').click(function(e) {
+    $('html').click(function(e){
         $('.dropdown-menu').slideUp();
+        $(this).parent().find('a').removeClass('active');
+        $('.caret-inverse').each(function(){
+            $(this).addClass('caret');
+            $(this).removeClass('caret-inverse');
+        });
+    });
+    $('.dropdown').click(function(e) {
+        if($(this).parents("ul").attr('id')=="menu-primary"){
+            $('.dropdown-menu').slideUp();
+            $(this).parent().find('active').removeClass('active');
+            $('.caret-inverse').each(function(){
+                $(this).addClass('caret');
+                $(this).removeClass('caret-inverse');
+            });
+            $(this).find('b').removeClass('caret');
+            $(this).find('b').addClass('caret-inverse');
+            $(this).parent().find('a').addClass('active');
+            $(this).parent().find('ul').first().slideToggle();
+        }
+        //        else if($(this).parents("ul").attr('id') === undefined){
+        //        }
+        else{
+            $(this).parent().find('a').addClass('active');
+            $(this).parent().find('ul').first().slideToggle();
+        }
+
+        e.stopPropagation();
     });
 
 });

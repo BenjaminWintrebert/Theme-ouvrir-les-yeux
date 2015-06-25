@@ -24,6 +24,7 @@ font-style: normal;
 }
 .flaticon-logotype42:before {
 	content: "\e003";
+    font-size: 2.8em;
 }
 .flaticon-magnifier12:before {
 	content: "\e004";
@@ -48,7 +49,9 @@ font-style: normal;
 }
 .flaticon-twitter1:before {
 	content: "\e00b";
+    font-size: 2.8em;
 }
 .flaticon-web42:before {
 	content: "\e00c";
+    font-size: 2.8em;
 }
