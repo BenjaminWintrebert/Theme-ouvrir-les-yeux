@@ -17,7 +17,7 @@ jQuery(document).ready(function(){
 
     $('#menu-primary li a').each(function(){
         if($(this).attr('class')=='dropdown-toggle'){
-            $(this).after('<div class="dropdown"><b class="caret"></b></div>');
+            $(this).after('<div title="Bouton d\'ouverture ou fermeture du menu" class="dropdown"><b class="caret"></b></div>');
         }
         else
         {

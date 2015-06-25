@@ -42,6 +42,21 @@ Version: 0.0.3
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+     -o-transition:color .2s ease-out, background 0.2s ease-in;
+  -ms-transition:color .2s ease-out, background 0.2s ease-in;
+  -moz-transition:color .2s ease-out, background 0.2s ease-in;
+  -webkit-transition:color .2s ease-out, background 0.2s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background 0.2s ease-in;
+}
+
+*:hover{
+    -o-transition:color .2s ease-out, background 0.2s ease-in;
+  -ms-transition:color .2s ease-out, background 0.2s ease-in;
+  -moz-transition:color .2s ease-out, background 0.2s ease-in;
+  -webkit-transition:color .2s ease-out, background 0.2s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background 0.2s ease-in;
 }
 
 html,body{
@@ -1304,6 +1319,7 @@ svg:not(:root) {
 
 .dropdown{
     background: #2b425c;
+    text-align: center;
 }
 
 .dropdown:hover{
@@ -1383,31 +1399,39 @@ svg:not(:root) {
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);
 }
 
-#bleu *{
-    color:yellow!important;
-    background: blue!important;
-    border-color:yellow!important;
+#bleu *:not(.caret):not(.caret-inverse){
+    color:yellow;
+    background: blue;
+    border-color:yellow;
 }
 
-#rouge *{
+#bleu .menu-item{
+ border:2px solid yellow;
+}
+
+#rouge *:not(.caret):not(.caret-inverse){
     color:white!important;
     background-color:red!important;
     border-color:white!important;
 }
 
-#blanc *{
+#rouge .menu-item{
+ border:2px solid white;
+}
+
+#blanc **:not(.caret):not(.caret-inverse)
     color:black!important;
     background-color:white!important;
     border-color:black!important;
 }
 
-#jaune *{
+#jaune *:not(.caret):not(.caret-inverse){
     color:black!important;
     background-color:yellow!important;
     border-color:black!important;
 }
 
-#noir *{
+#noir *:not(.caret):not(.caret-inverse){
     color:white!important;
     background-color:black!important;
     border-color:white!important;
