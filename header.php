@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<?php if(isset($_GET['color'])){
+<?php
+if(isset($_GET['color'])){
     $color=$_GET['color']; 
 }
 else{
-    $color=$_COOKIE['color']; 
-}?>
+    $color=$_COOKIE['color'];}
+if($color==" "){
+    $color="no";
+}
+?>
 <html lang="fr" id="<?php echo $color; ?>">
     <head>
         <meta charset="utf-8">
@@ -12,12 +16,9 @@ else{
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="Ouvrir Les Yeux soutient les personnes atteintes de Neuropathies Optiques Héréditaires et leurs proches, et finance la Recherche">
-        <meta name="author" content="BaBe">
+        <meta name="author" content="Ouvrir Les Yeux">
         <link rel="icon" href="../../favicon.ico">
-        <meta http-equiv="cache-control" content="no-cache" />
         <title>Site de l’association Ouvrir Les Yeux</title>
-
-
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -26,7 +27,6 @@ else{
         <?php wp_enqueue_script("wpbootstrap_scripts_with_jquery"); ?>
         <?php wp_head(); ?>
     </head>
-
     <body>
         <div class="container">
             <div class="row">
@@ -52,7 +52,7 @@ else{
                             <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
                                 <div class="input-group custom-search-form">
                                     <span class="input-group-btn">
-                                        <button title="Bouton de recherche" type="submit" class="btn btn-default" type="button">
+                                        <button type="submit" class="btn btn-default">
                                             <span class="glyphicon glyphicon-search"></span>
                                         </button>
                                     </span>

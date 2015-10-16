@@ -23,7 +23,7 @@
                 <a href="http://www.ouvrirlesyeux.org/le-soutien/dons/"><div class="bouton_sidebar">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don_b.png" class="btn-ds"/>
+                            <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_don_b.png" alt="Donnez à Ouvrir Les Yeux" class="btn-ds"/>
                         </div>
                         <div class="col-md-6">
                             <span>Don</span>
@@ -35,7 +35,7 @@
                 <a href="http://www.ouvrirlesyeux.org/le-soutien/"><div class="bouton_sidebar">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien_b.png" class="btn-ds"/>
+                            <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/logo_soutien_b.png" class="btn-ds" alt="Soutenez Ouvrir Les Yeux"/>
                         </div>
                         <div class="col-md-6">
                             <span>Soutien</span>
