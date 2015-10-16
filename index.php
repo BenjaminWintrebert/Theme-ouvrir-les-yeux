@@ -17,7 +17,7 @@ $query = new WP_Query( $args );
             <div class="oly-list-paginated">
                 <div class="oly-item-list oly-grid-padding">
                     <div class="row">
-<?php
+                        <?php
 if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <div class="col-sm-6">
 
@@ -31,78 +31,71 @@ if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
                                     <div class="oly-item-elt-inner">
                                         <div class="oly-item-elt-title">
                                             <a href="<?php the_permalink(); ?>">
-                                                <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/cellule.png" class="cellule" alt="L'article s'intitule : <?php echo get_the_title(); ?>
-                                                                                                                                                      . Il a été rédigé le : <?php echo get_the_date() ?> à <?php echo get_the_time() ?>"/>
-                                            </a>
+                                                <img src="<?php echo get_template_directory_uri() ;?>/bootstrap/img/cellule.png" class="cellule" alt="L'article s'intitule : <?php echo get_the_title(); ?>"</a>
 
-                                            <span class="oly-text">
-                                                <a href="<?php the_permalink(); ?>"><?php echo new_title('...', 8); ?>
+                                                <span class="oly-text">
+                                                    <a href="<?php the_permalink(); ?>"><?php echo new_title('...', 8); ?>
+                                                    </a>
+                                                </span>
+                                                </div>
+                                            <div class="oly-item-elt-desc">
+                                                <?php the_excerpt(); ?>
+                                            </div>
+                                        </div>
+                                        <div class="oly-ellipsis-text"></div>
+                                        <div class="oly-bottom">
+                                            <div class="oly-comments pull-left">
+                                                <a class="comment" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
+                                                    <i class="glyphicon glyphicon-thumbs-up" style="font-size: 16px;"></i>
+                                                    <span>Partager</span>
                                                 </a>
-                                                <span class="oly-publication">
-
-
-
-                                                    <span class="glyphicon glyphicon-time"></span> <?php echo get_the_date();?> à <?php echo get_the_time(); ?>                      </span>
-                                            </span>
+                                            </div>
+                                            <div class="oly-bottom-infos pull-left"></div>
                                         </div>
-                                        <div class="oly-item-elt-desc">
-                                            <?php the_excerpt(); ?>
-                                        </div>
-                                    </div>
-                                    <div class="oly-ellipsis-text"></div>
-                                    <div class="oly-bottom">
-                                        <div class="oly-comments pull-left">
-                                            <a class="comment" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
-                                                <i class="glyphicon glyphicon-thumbs-up" style="font-size: 16px;"></i>
-                                                <span>Partager</span>
-                                            </a>
-                                        </div>
-                                        <div class="oly-bottom-infos pull-left"></div>
                                     </div>
                                 </div>
                             </div>
+
+
+                            <?php if($count%2==0){ ?>
                         </div>
 
 
-                        <?php if($count%2==0){ ?>
-                    </div>
-
-
-                    <div class="row">
-                        <?php } $count ++;
+                        <div class="row">
+                            <?php } $count ++;
 
 endwhile; else:
-                        ?>
-                    </div>
+                            ?>
+                        </div>
 
 
 
 
 
-                    <?php
+                        <?php
 wp_redirect( $location, $status );
 exit;
-                    ?>
-
-                    <?php endif; ?>
-                    <div class="row pagination">
-                        <?php
-if ( function_exists('wp_bootstrap_pagination') )
-    wp_bootstrap_pagination();
                         ?>
 
+                        <?php endif; ?>
+                        <div class="row pagination">
+                            <?php
+if ( function_exists('wp_bootstrap_pagination') )
+    wp_bootstrap_pagination();
+                            ?>
+
+                        </div>
                     </div>
+
                 </div>
 
             </div>
 
         </div>
-
     </div>
-</div>
-<div class="col-md-3">
-    <?php get_sidebar(); ?>
-</div>
+    <div class="col-md-3">
+        <?php get_sidebar(); ?>
+    </div>
 </div>
 
 
