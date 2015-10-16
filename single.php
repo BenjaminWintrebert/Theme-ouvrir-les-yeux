@@ -18,6 +18,7 @@
             <h1><?php the_title(); ?></h1>
             <hr>
             <div class="post-content"> <?php the_content(); ?> </div>
+            <div class="ask_error"><a href='http://www.ouvrirlesyeux.org/contact/'>Si vous voyez une erreur, contactez-nous !</a></div>
             <?php endwhile; else: ?>
             <p><?php _e("Désolé, cette page n'existe pas."); ?></p>
             <?php endif; ?>

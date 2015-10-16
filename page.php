@@ -7,18 +7,18 @@
             <div class="col-md-12">
                 <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
                     <?php if(function_exists('bcn_display'))
-                    {
-                        bcn_display();
-                    }?>
+{
+    bcn_display();
+}?>
                 </div>
             </div>
         </div>
         <div class="container_page">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <h1><?php the_title(); ?></h1>
+            <h1><?php the_title(); ?></h1>
             <hr>
             <?php the_content(); ?>
-
+            <div class="ask_error"><a href='http://www.ouvrirlesyeux.org/contact/'>Si vous voyez une erreur, contactez-nous !</a></div>
             <?php endwhile; else: ?>
             <p><?php _e("Désolé, cette page n'existe pas."); ?></p>
             <?php endif; ?>
