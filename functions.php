@@ -273,4 +273,15 @@ add_action('init', function() {
     }
 });
 
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'admin_menu' , 'admin_menu_new_items' );
+function admin_menu_new_items() {
+    global $submenu;
+    $submenu['index.php'][500] = array( 'Projets', 'manage_options' , 'http://projet.ouvrirlesyeux.org' );
+}
+
 ?>
